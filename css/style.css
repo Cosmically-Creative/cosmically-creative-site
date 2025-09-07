@@ -60,12 +60,6 @@ body {
   font-size: 2rem;
 }
 
-header {
-  height: 100vh;
-  background-image: url("/img/hero.svg");
-  background-size: cover;
-}
-
 nav {
   top: 0;
   left: 0;
@@ -126,6 +120,7 @@ h3 {
   transition: all 0.3s;
   color: #fff;
   width: fit-content;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -146,6 +141,9 @@ h3 {
 
 .hero-section {
   margin-bottom: 30rem;
+  height: 100vh;
+  background-image: url("/img/hero.svg");
+  background-size: cover;
 }
 
 .hero {
@@ -197,6 +195,12 @@ h3 {
   border-radius: 20px;
   padding: 5rem;
   justify-content: center;
+  transition: all 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1rem 1rem 0 #2d54c7;
 }
 
 .service-card-header {
