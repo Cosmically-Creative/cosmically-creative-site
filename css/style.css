@@ -133,10 +133,25 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  display: inline-block;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #ffe642;
 }
 
 p {
   line-height: 1.6;
+}
+
+.heading-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  color: #fff;
+}
+
+.heading-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .btn:link,
@@ -160,6 +175,7 @@ p {
   background-color: #ffe642;
   color: #0b1532;
   font-weight: 500;
+  transform: scale(1.1);
 }
 
 .logo {
@@ -171,6 +187,7 @@ p {
   height: 100vh;
   background-image: url("/img/hero.svg");
   background-size: cover;
+  background-position: center;
 }
 
 .hero {
@@ -182,7 +199,7 @@ p {
   gap: 5rem;
   left: 50%;
   top: 75%;
-  max-width: 50%;
+  max-width: 120rem;
   align-items: center;
 }
 
@@ -191,19 +208,9 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 7rem;
-  max-width: 50%;
+  max-width: 120rem;
   margin: 0 auto;
-}
-
-.services-header {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-
-.star {
-  width: 2.5rem;
-  height: 2.5rem;
+  margin-bottom: 30rem;
 }
 
 .services-grid {
@@ -221,12 +228,11 @@ p {
   border: 3px solid #2d54c7;
   border-radius: 20px;
   padding: 5rem;
-  justify-content: center;
   transition: all 0.3s;
 }
 
 .service-card:hover {
-  transform: scale(1.1);
+  transform: translateY(-1.2rem);
   box-shadow: 0 1rem 1rem 0 #2d54c7;
 }
 
@@ -236,10 +242,125 @@ p {
   gap: 3rem;
 }
 
-.service-card-header h3 {
-  border-bottom: 3px solid #ffe642;
-}
-
 .service-icon {
   width: 5rem;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  background-image: url("/img/about-me.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 120rem;
+  margin-bottom: 30rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  max-width: 120rem;
+  padding: 30rem 0;
+}
+
+.about-wrapper {
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
+  background-color: rgb(11, 21, 50, 0.4);
+  padding: 5rem;
+  border-radius: 5rem;
+  border: 3px solid #2d54c7;
+}
+
+.about-picture {
+  position: absolute;
+  right: 50%;
+  bottom: -26rem;
+  transform: translate(50%);
+  width: 30rem;
+  height: 30rem;
+  background-color: #fff;
+  border-radius: 50%;
+  background-image: url("/img/me.jpg");
+  background-size: cover;
+  border: 3px solid #ffe642;
+  transition: all 0.3s;
+}
+
+.about-picture:hover {
+  box-shadow: 0 0 5rem 0 #ffe642;
+}
+
+.project-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30rem;
+  gap: 7rem;
+}
+
+.astronaut {
+  height: 15rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.tag {
+  background-color: #2d54c7;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  width: 50rem;
+  height: 30rem;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 3rem;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #2d54c7;
+  gap: 1rem;
+  transition: all 0.4s;
+}
+
+.project-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 1rem 1rem 0 #2d54c7;
+}
+
+.project-card:nth-child(1) {
+  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/ten8locker.png");
+}
+
+.project-card:nth-child(2) {
+  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/christshands.png");
+}
+
+.project-card:nth-child(3) {
+  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/terrytownpuppies.png");
+}
+
+.project-card:nth-child(4) {
+  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/cosmicallycreative.png");
 }
