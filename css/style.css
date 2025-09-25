@@ -60,7 +60,7 @@ body {
   font-size: 2rem;
 }
 
-nav {
+.nav {
   top: 0;
   left: 0;
   position: fixed;
@@ -71,6 +71,8 @@ nav {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(11, 21, 50, 0.4);
+  /* box-shadow: 0px 2px 0px #2d54c7; */
 }
 
 .nav-links {
@@ -79,6 +81,7 @@ nav {
 
 .main-nav-link {
   display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .main-nav-link:link,
@@ -121,6 +124,7 @@ h3 {
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -1.2px;
+  text-align: center;
 }
 
 h1 {
@@ -179,7 +183,7 @@ p {
 }
 
 .logo {
-  width: 20rem;
+  width: 15rem;
 }
 
 .hero-section {
@@ -253,7 +257,6 @@ p {
   background-size: cover;
   background-position: center;
   min-height: 120rem;
-  margin-bottom: 30rem;
 }
 
 .about-content {
@@ -301,15 +304,17 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30rem;
+  padding: 30rem 0px 30rem 0px;
   gap: 7rem;
+  background-image: url("/img/projects-bg.svg");
+  background-size: cover;
 }
 
 .astronaut {
   height: 15rem;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 3rem;
 }
 
 .project-grid {
@@ -363,4 +368,85 @@ p {
 .project-card:nth-child(4) {
   background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/cosmicallycreative.png");
+}
+
+.contact-section {
+  background-image: url("/img/footer.svg");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: rgb(11, 21, 50, 0.4);
+  padding: 5rem;
+  border-radius: 5rem;
+  border: 3px solid #2d54c7;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.social-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  transition: all 0.3s;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.social-icon {
+  width: 3.6rem;
+}
+
+.social-icon-wrapper:hover {
+  background-color: #2d54c7;
+  transform: scale(1.1);
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-spacer {
+  height: 95rem;
+}
+
+.copyright-text {
+  position: absolute;
+  color: #0b1532;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Space Grotesk", sans-serif;
 }
