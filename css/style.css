@@ -350,24 +350,34 @@ p {
   box-shadow: 0 1rem 1rem 0 #2d54c7;
 }
 
-.project-card:nth-child(1) {
+.project-card--1 {
   background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/ten8locker.jpg");
 }
 
-.project-card:nth-child(2) {
+.project-card--2 {
   background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/christshands.jpg");
 }
 
-.project-card:nth-child(3) {
+.project-card--3 {
   background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/terrytownpuppies.jpg");
 }
 
-.project-card:nth-child(4) {
+.project-card--4 {
   background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/cosmicallycreative.jpg");
+}
+
+.project-grid a:link,
+.project-grid a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-grid a:hover,
+.project-grid a:active {
 }
 
 .contact-section {
