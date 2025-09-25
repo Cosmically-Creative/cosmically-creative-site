@@ -370,14 +370,10 @@ p {
     url("/img/client-img/cosmicallycreative.jpg");
 }
 
-.project-grid a:link,
-.project-grid a:visited {
+.project-card-link:link,
+.project-card-link:visited {
   text-decoration: none;
   color: #fff;
-}
-
-.project-grid a:hover,
-.project-grid a:active {
 }
 
 .contact-section {
