@@ -1,0 +1,139 @@
+/************************/
+/* BELOW 1350px (smaller desktops) */
+/************************/
+
+@media (max-width: 85em) {
+  .hero {
+    max-width: 55%;
+  }
+
+  .services-section {
+    max-width: 85%;
+  }
+
+  .about-content {
+    max-width: 85%;
+  }
+
+  .astronaut {
+    height: 10rem;
+  }
+
+  .project-card {
+    width: 45rem;
+    height: 28rem;
+  }
+}
+
+@media (max-width: 70em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+
+  .services-grid {
+    column-gap: 3rem;
+    row-gap: 3rem;
+  }
+
+  .service-card {
+    padding: 3rem;
+  }
+
+  .project-card {
+    width: 40rem;
+    height: 25rem;
+  }
+
+  .contact-grid {
+    gap: 0;
+  }
+}
+
+@media (max-width: 47em) {
+  .hero {
+    max-width: 80%;
+  }
+
+  .services-section {
+    max-width: 90%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    max-width: 90%;
+    padding: 10rem 0;
+  }
+
+  .about-wrapper {
+    padding: 3rem;
+  }
+
+  .about-picture {
+    bottom: -28rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 65rem;
+    height: 40rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    width: 55rem;
+  }
+
+  .contact-img {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 38em) {
+  html {
+    font-size: 45%;
+  }
+  .hero {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 31em) {
+  .project-card {
+    width: 55rem;
+    height: 32rem;
+  }
+
+  .about-content {
+    padding-bottom: 30rem;
+  }
+
+  .project-card {
+    width: 42rem;
+    height: 28rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    width: 45rem;
+  }
+
+  .heading-sub {
+    max-width: 80%;
+  }
+}

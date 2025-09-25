@@ -6,49 +6,43 @@
     <meta
       name="description"
       content="Cosmically Creative is your one-stop shop for all things web design & development using the power of HTML, CSS, and JavaScript."
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
+    <link rel="apple-icon" href="img/favicons/favicon-apple.webp" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="img/favicons/favicon.webp" />
-    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Cosmically Creative</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Cosmically Creative - Web Design & Development</title>
   </head>
   <body>
     <nav class="nav">
-      <img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo" />
+      <a href="#home"
+        ><img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo"
+      /></a>
       <ul class="nav-links">
-        <li><a class="main-nav-link" href="index.html">Home</a></li>
-        <li><a class="main-nav-link" href="services.html">Services</a></li>
-        <li><a class="main-nav-link" href="about.html">About</a></li>
-        <li><a class="main-nav-link" href="contact.html">Contact</a></li>
-        <li><a class="main-nav-link" href="articles.html">Articles</a></li>
-        <li>
-          <a class="main-nav-link nav-btn" href="contact.html"
-            ><img
-              class="rocket-icon"
-              src="img/icons/rocket.svg"
-              alt="rocket icon"
-          /></a>
-        </li>
+        <li><a class="main-nav-link" href="#home">Home</a></li>
+        <li><a class="main-nav-link" href="#about">About</a></li>
+        <li><a class="main-nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <section class="hero-section">
+      <section class="hero-section" id="home">
         <div class="hero">
           <h1>Trusted Web Development, Powered by Cosmic Creativity</h1>
           <p>
             At Cosmically Creative, I fuse creativity and custom code to craft
             websites that help you stand out in the vast digital universe.
           </p>
-          <a href="services.html" class="btn">Initiate Launch</a>
+          <a href="#contact" class="btn">Initiate Launch</a>
         </div>
       </section>
 
@@ -84,7 +78,7 @@
               <img
                 class="service-icon"
                 src="img/icons/code.svg"
-                alt="design icon"
+                alt="code icon"
               />
               <h3>Web Development</h3>
             </div>
@@ -98,7 +92,7 @@
               <img
                 class="service-icon"
                 src="img/icons/shopify.svg"
-                alt="design icon"
+                alt="shopify icon"
               />
               <h3>eCommerce</h3>
             </div>
@@ -113,7 +107,7 @@
               <img
                 class="service-icon"
                 src="img/icons/support.svg"
-                alt="design icon"
+                alt="support icon"
               />
               <h3>Ongoing Support</h3>
             </div>
@@ -123,10 +117,10 @@
             </p>
           </div>
         </div>
-        <a href="services.html" class="btn">Learn More</a>
+        <!-- <a href="services.html" class="btn">Learn More</a> -->
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="about-content">
           <div class="heading-wrapper">
             <img
@@ -190,76 +184,82 @@
           </div>
         </div>
       </section>
-    </main>
-    <section class="contact-section">
-      <div></div>
-      <div class="heading-wrapper">
-        <img class="heading-icon" src="img/icons/chat.svg" alt="contact icon" />
-        <h2>Let's Connect!</h2>
-      </div>
-      <p>
-        Questions? Please reach out with your preferred contact method so we can
-        discuss in further detail.
-      </p>
-      <div class="contact-wrapper">
-        <div class="contact-card">
-          <h3>Email</h3>
-          <a href="mailto:blake@cosmicallycreative.com"
-            >blake@cosmicallycreative.com</a
-          >
+      <section class="contact-section" id="contact">
+        <div class="heading-wrapper">
+          <img
+            class="heading-icon"
+            src="img/icons/chat.svg"
+            alt="contact icon"
+          />
+          <h2>Contact Me</h2>
         </div>
-        <div class="contact-card">
-          <h3>Phone</h3>
-          <a href="tel:+17125786203">712-578-6203</a>
-        </div>
-        <div class="contact-card">
-          <h3>Social Media</h3>
-          <div class="social-icons">
-            <div class="social-icon-wrapper">
-              <a href="https://www.facebook.com/cosmicallycreative"
-                ><img
-                  class="social-icon"
-                  src="img/icons/social/facebook.svg"
-                  alt="facebook icon"
-              /></a>
+        <p class="heading-sub">
+          Let's connect! Choose your preferred contact method below.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-wrapper">
+            <div class="contact-card">
+              <h3>Email</h3>
+              <a href="mailto:blake@cosmicallycreative.com"
+                >blake@cosmicallycreative.com</a
+              >
             </div>
-            <div class="social-icon-wrapper">
-              <a href="https://www.instagram.com/cosmicallycreative"
-                ><img
-                  class="social-icon"
-                  src="img/icons/social/instagram.svg"
-                  alt="instagram icon"
-              /></a>
+            <div class="contact-card">
+              <h3>Phone</h3>
+              <a href="tel:+17125786203">712-578-6203</a>
             </div>
-            <div class="social-icon-wrapper">
-              <a href="https://github.com/Cosmically-Creative"
-                ><img
-                  class="social-icon"
-                  src="img/icons/social/github.svg"
-                  alt="github icon"
-              /></a>
+            <div class="contact-card">
+              <h3>Social Media</h3>
+              <div class="social-icons">
+                <div class="social-icon-wrapper">
+                  <a href="https://www.facebook.com/cosmicallycreative"
+                    ><img
+                      class="social-icon"
+                      src="img/icons/social/facebook.svg"
+                      alt="facebook icon"
+                  /></a>
+                </div>
+                <div class="social-icon-wrapper">
+                  <a href="https://www.instagram.com/cosmicallycreative"
+                    ><img
+                      class="social-icon"
+                      src="img/icons/social/instagram.svg"
+                      alt="instagram icon"
+                  /></a>
+                </div>
+                <div class="social-icon-wrapper">
+                  <a href="https://github.com/Cosmically-Creative"
+                    ><img
+                      class="social-icon"
+                      src="img/icons/social/github.svg"
+                      alt="github icon"
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="contact-img">
+            <img src="img/rocket-launch.svg" alt="rocket taking off" />
+          </div>
         </div>
-      </div>
-      <footer class="footer">
-        <nav class="footer-nav">
-          <img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo" />
-          <ul class="nav-links">
-            <li><a class="main-nav-link" href="index.html">Home</a></li>
-            <li>
-              <a class="main-nav-link" href="services.html">Services</a>
-            </li>
-            <li><a class="main-nav-link" href="about.html">About</a></li>
-            <li><a class="main-nav-link" href="contact.html">Contact</a></li>
-            <li>
-              <a class="main-nav-link" href="articles.html">Articles</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-spacer"></div>
-        <p class="copyright-text">Cosmically Creative &copy; 2025</p>
-      </footer>
-    </section>
+        <footer class="footer">
+          <nav class="footer-nav">
+            <a href="#home"
+              ><img
+                class="logo"
+                src="img/logo.svg"
+                alt="Cosmically Creative Logo"
+            /></a>
+            <ul class="nav-links">
+              <li><a class="main-nav-link" href="#home">Home</a></li>
+              <li><a class="main-nav-link" href="#about">About</a></li>
+              <li><a class="main-nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer-spacer"></div>
+          <p class="copyright-text">Cosmically Creative &copy; 2025</p>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>
