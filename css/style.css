@@ -189,6 +189,7 @@ p {
   align-items: center;
   text-decoration: underline #ffe642 !important;
   font-size: 2.2rem;
+  padding: 0 !important;
 }
 
 .btn-alt:hover {
@@ -249,6 +250,12 @@ p {
   transition: all 0.3s;
   height: 100%;
   width: 100%;
+}
+
+.services-link:link,
+.services-link:visited {
+  text-decoration: none;
+  color: #fff;
 }
 
 .service-card:hover {
