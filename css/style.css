@@ -50,6 +50,7 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -59,6 +60,11 @@ body {
   color: #fff;
   background-color: #0b1532;
   font-size: 2rem;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
 }
 
 .nav {
@@ -103,9 +109,25 @@ body {
   align-items: center;
 }
 
-.rocket-icon {
-  max-width: 4rem;
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
 }
+
+.icon-mobile-nav {
+  height: 5rem;
+  width: 5rem;
+}
+
+.icon-mobile-nav[name="close"] {
+  display: none;
+}
+
+/* .rocket-icon {
+  max-width: 4rem;
+} */
 
 .main-nav-link.nav-btn:link,
 .nav-btn:visited {

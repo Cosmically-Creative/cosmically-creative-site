@@ -57,6 +57,50 @@
   .contact-grid {
     gap: 0;
   }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .nav-links {
+    background-color: rgb(11, 21, 50, 0.9);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 40vh;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 100px;
+    transition: all 0.4s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="open"] {
+    display: none;
+  }
+
+  .main-nav-link {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 47em) {
@@ -102,6 +146,9 @@
   .contact-img {
     grid-row: 1;
   }
+  .nav-links {
+    width: 40%;
+  }
 }
 
 @media (max-width: 38em) {
@@ -110,6 +157,9 @@
   }
   .hero {
     max-width: 90%;
+  }
+  .nav-links {
+    width: 50%;
   }
 }
 
@@ -135,5 +185,8 @@
 
   .heading-sub {
     max-width: 80%;
+  }
+  .nav-links {
+    width: 60%;
   }
 }
