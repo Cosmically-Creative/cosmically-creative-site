@@ -513,6 +513,12 @@ p {
   align-items: center;
 }
 
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+
 .footer-spacer {
   height: 95rem;
 }

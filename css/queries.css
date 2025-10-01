@@ -1,5 +1,5 @@
 /************************/
-/* BELOW 1350px (smaller desktops) */
+/* BELOW 1350px */
 /************************/
 
 @media (max-width: 85em) {
@@ -23,7 +23,19 @@
     width: 45rem;
     height: 28rem;
   }
+
+  .steps-header {
+    max-width: 90%;
+  }
+
+  .steps-grid {
+    max-width: 90%;
+  }
 }
+
+/************************/
+/* BELOW 1120px */
+/************************/
 
 @media (max-width: 70em) {
   html {
@@ -33,7 +45,19 @@
   .hero {
     max-width: 65%;
   }
+
+  .steps-grid {
+    gap: 3rem;
+  }
+
+  .steps-grid .service-card {
+    padding: 3rem;
+  }
 }
+
+/************************/
+/* BELOW 1008px */
+/************************/
 
 @media (max-width: 63em) {
   html {
@@ -77,6 +101,7 @@
     justify-content: center;
     border-bottom-left-radius: 100px;
     transition: all 0.4s ease-in;
+    font-size: 3rem;
 
     opacity: 0;
     pointer-events: none;
@@ -98,10 +123,18 @@
     display: none;
   }
 
-  .main-nav-link {
-    font-size: 3rem;
+  .steps-header {
+    max-width: 95%;
+  }
+
+  .steps-grid {
+    max-width: 95%;
   }
 }
+
+/************************/
+/* BELOW 752px */
+/************************/
 
 @media (max-width: 47em) {
   .hero {
@@ -149,7 +182,61 @@
   .nav-links {
     width: 40%;
   }
+
+  .steps-header {
+    max-width: 85%;
+  }
+
+  .steps-grid {
+    max-width: 85%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 5rem;
+  }
+
+  .steps-section .service-card:nth-child(1) {
+    grid-row: 2 / 3;
+  }
+
+  .steps-section .service-card:nth-child(3) {
+    grid-row: 3 / 4;
+  }
+
+  .steps-section .service-card:nth-child(4) {
+    grid-row: 4 / 5;
+  }
+  .steps-section .service-card:nth-child(6) {
+    grid-row: 5 / 6;
+  }
+
+  .fifth-step {
+    grid-row: 6 / 7;
+  }
+
+  .footer-spacer {
+    height: 60rem;
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    margin-bottom: 5rem;
+  }
+
+  .footer-links .main-nav-link {
+    color: #0b1532;
+  }
 }
+
+/************************/
+/* BELOW 608px */
+/************************/
 
 @media (max-width: 38em) {
   html {
@@ -162,6 +249,10 @@
     width: 50%;
   }
 }
+
+/************************/
+/* BELOW 496px */
+/************************/
 
 @media (max-width: 31em) {
   .project-card {

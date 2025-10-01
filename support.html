@@ -29,19 +29,35 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <a href="index.html"
-        ><img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo"
-      /></a>
-      <ul class="nav-links">
-        <li><a class="main-nav-link" href="index.html">Home</a></li>
-        <li><a class="main-nav-link" href="index.html#about">About</a></li>
-        <li><a class="main-nav-link" href="#contact">Contact</a></li>
-        <li>
-          <a class="main-nav-link" href="index.html#services">Services</a>
-        </li>
-      </ul>
-    </nav>
+    <header class="header">
+      <nav class="nav">
+        <a href="#home"
+          ><img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo"
+        /></a>
+        <ul class="nav-links">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li><a class="main-nav-link" href="index.html#about">About</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
+          <li>
+            <a class="main-nav-link" href="index.html#services">Services</a>
+          </li>
+        </ul>
+        <button class="btn-mobile-nav">
+          <img
+            class="icon-mobile-nav"
+            src="img/icons/menu.svg"
+            alt="menu icon"
+            name="open"
+          />
+          <img
+            class="icon-mobile-nav"
+            src="img/icons/close.svg"
+            alt="menu icon"
+            name="close"
+          />
+        </button>
+      </nav>
+    </header>
     <main>
       <section class="steps-section">
         <div class="steps-header">
@@ -174,18 +190,21 @@
         </div>
         <footer class="footer">
           <nav class="footer-nav">
-            <a href="index.html"
+            <a href="#home"
               ><img
                 class="logo"
                 src="img/logo.svg"
                 alt="Cosmically Creative Logo"
             /></a>
-            <ul class="nav-links">
+            <ul class="footer-links">
               <li><a class="main-nav-link" href="index.html">Home</a></li>
               <li>
                 <a class="main-nav-link" href="index.html#about">About</a>
               </li>
               <li><a class="main-nav-link" href="#contact">Contact</a></li>
+              <li>
+                <a class="main-nav-link" href="index.html#services">Services</a>
+              </li>
             </ul>
           </nav>
           <div class="footer-spacer"></div>
@@ -193,5 +212,6 @@
         </footer>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
