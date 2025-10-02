@@ -301,7 +301,6 @@ p {
   background-image: url("/img/about-me.svg");
   background-size: cover;
   background-position: center;
-  min-height: 120rem;
 }
 
 .about-content {
@@ -311,6 +310,7 @@ p {
   gap: 7rem;
   max-width: 120rem;
   padding: 30rem 0;
+  margin-bottom: 7rem;
 }
 
 .about-wrapper {
