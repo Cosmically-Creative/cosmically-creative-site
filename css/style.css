@@ -289,6 +289,14 @@ p {
   display: flex;
   align-items: center;
   gap: 3rem;
+  position: relative;
+}
+
+.arrow-icon {
+  position: absolute;
+  width: 3rem;
+  right: -2rem;
+  top: -2rem;
 }
 
 .service-icon {
