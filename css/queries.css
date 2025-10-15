@@ -31,6 +31,10 @@
   .steps-grid {
     max-width: 90%;
   }
+
+  .heading-sub {
+    max-width: 100rem;
+  }
 }
 
 /************************/
@@ -136,6 +140,22 @@
   .steps-grid {
     max-width: 95%;
   }
+
+  .contact-img {
+    width: 40rem;
+  }
+
+  .form-field {
+    width: 40rem;
+  }
+
+  .heading-sub {
+    max-width: 85rem;
+  }
+
+  .contact-grid {
+    gap: 6rem;
+  }
 }
 
 /************************/
@@ -238,6 +258,22 @@
   .footer-links .main-nav-link {
     color: #0b1532;
   }
+
+  .contact-img {
+    width: 30rem;
+  }
+
+  .form-field {
+    width: 50rem;
+  }
+
+  .heading-sub {
+    max-width: 65rem;
+  }
+
+  .contact-grid {
+    gap: 5rem;
+  }
 }
 
 /************************/
@@ -283,7 +319,12 @@
   .heading-sub {
     max-width: 80%;
   }
+
   .nav-links {
     width: 60%;
+  }
+
+  .form-field {
+    width: 38rem;
   }
 }
