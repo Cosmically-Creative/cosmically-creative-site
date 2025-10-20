@@ -403,8 +403,8 @@ p {
 }
 
 .project-card:hover {
-  transform: translateY(-1.2rem);
   box-shadow: 0 1rem 1rem 0 #2d54c7;
+  transform: scale(1.1);
 }
 
 .project-card--1 {
