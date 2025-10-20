@@ -227,6 +227,7 @@ p {
   width: 15rem;
 }
 
+/* Element styles */
 .hero-section {
   margin-bottom: 30rem;
   height: 100vh;
@@ -273,7 +274,7 @@ p {
   border: 3px solid #2d54c7;
   border-radius: 20px;
   padding: 5rem;
-  transition: all 0.3s;
+  transition: transform 0.3s;
   height: 100%;
   width: 100%;
 }
@@ -635,4 +636,34 @@ p {
 
 .yellow-border:hover {
   box-shadow: 0 1rem 1rem 0 #ffe642 !important;
+}
+
+/* Animations */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll-delay {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition-property: opacity, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0.2s;
+}
+
+.animate-on-scroll-delay.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
