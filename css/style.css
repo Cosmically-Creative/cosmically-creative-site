@@ -493,6 +493,10 @@ p {
   font-family: "Space Grotesk", sans-serif;
 }
 
+.form-field::placeholder {
+  color: #fff;
+}
+
 .btn-form {
   background-color: transparent;
   color: #fff;
