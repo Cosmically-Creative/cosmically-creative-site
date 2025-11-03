@@ -225,6 +225,11 @@ p {
 
 .logo {
   width: 15rem;
+  transition: all 0.5s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 /* Element styles */
