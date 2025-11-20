@@ -8,6 +8,14 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+const navLinks = document.querySelectorAll(".main-nav-link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    headerEl.classList.remove("nav-open");
+  });
+});
+
 // Scroll Animations
 document.addEventListener("DOMContentLoaded", () => {
   const observerOptions = { root: null, rootMargin: "0px", threshold: 0.5 };
