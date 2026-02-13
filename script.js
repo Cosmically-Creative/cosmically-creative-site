@@ -16,6 +16,34 @@ navLinks.forEach((link) => {
   });
 });
 
+// Dropdown menu for Services
+const dropdownItems = document.querySelectorAll(".nav-item-dropdown");
+
+dropdownItems.forEach((item) => {
+  const trigger = item.querySelector(".main-nav-link");
+
+  trigger.addEventListener("click", (e) => {
+    const isMobile = window.matchMedia("(max-width: 63em)").matches;
+    if (isMobile) {
+      e.preventDefault();
+      item.classList.toggle("dropdown-open");
+    }
+  });
+});
+
+document.querySelectorAll(".dropdown-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    headerEl.classList.remove("nav-open");
+    dropdownItems.forEach((item) => item.classList.remove("dropdown-open"));
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".nav-item-dropdown")) {
+    dropdownItems.forEach((item) => item.classList.remove("dropdown-open"));
+  }
+});
+
 // Testimonial Slider
 const testimonials = [
   {

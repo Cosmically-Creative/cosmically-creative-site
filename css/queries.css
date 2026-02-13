@@ -142,6 +142,12 @@
     visibility: hidden;
   }
 
+  .nav-links {
+    height: auto;
+    padding: 8rem 0 4rem;
+    gap: 3rem;
+  }
+
   .nav-open .nav-links {
     opacity: 1;
     pointer-events: auto;
@@ -155,6 +161,54 @@
 
   .nav-open .icon-mobile-nav[name="open"] {
     display: none;
+  }
+
+  .nav-item-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    min-width: auto;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-item-dropdown.dropdown-open .dropdown-menu {
+    max-height: 30rem;
+  }
+
+  .nav-item-dropdown:hover .dropdown-menu {
+    max-height: 0;
+  }
+
+  .nav-item-dropdown.dropdown-open:hover .dropdown-menu {
+    max-height: 30rem;
+  }
+
+  .dropdown-link:link,
+  .dropdown-link:visited {
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .dropdown-link:hover,
+  .dropdown-link:active {
+    background-color: transparent;
+    color: #ffe642;
   }
 
   .steps-header {
