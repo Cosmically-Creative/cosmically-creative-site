@@ -506,7 +506,7 @@ p {
 .project-card--1 {
   background-image:
     linear-gradient(rgba(11, 21, 50, 0.75)),
-    url("/img/client-img/ten8locker.jpg");
+    url("/img/client-img/valordesignlabs.png");
 }
 
 .project-card--2 {
@@ -525,6 +525,12 @@ p {
   background-image:
     linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/hopefoodpantry.jpg");
+}
+
+.project-card--5 {
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/centralreformedchurch.png");
 }
 
 .project-card-link:link,
