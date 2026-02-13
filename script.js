@@ -79,8 +79,6 @@ function showSlide(index) {
   slides[currentSlide].classList.add("active");
 }
 
-buildSlides();
-
 function setSlidesHeight() {
   const slides = document.querySelectorAll(".testimonial-slide");
   let maxHeight = 0;
@@ -93,26 +91,32 @@ function setSlidesHeight() {
   slides[currentSlide].classList.add("active");
 }
 
-setSlidesHeight();
-window.addEventListener("resize", setSlidesHeight);
+if (slidesContainer) {
+  buildSlides();
+  setSlidesHeight();
+  window.addEventListener("resize", setSlidesHeight);
 
-document
-  .querySelector(".testimonial-btn--prev")
-  .addEventListener("click", () => {
-    showSlide(currentSlide - 1);
-  });
+  const testimonialPrevBtn = document.querySelector(".testimonial-btn--prev");
+  const testimonialNextBtn = document.querySelector(".testimonial-btn--next");
 
-document
-  .querySelector(".testimonial-btn--next")
-  .addEventListener("click", () => {
-    showSlide(currentSlide + 1);
-  });
+  if (testimonialPrevBtn) {
+    testimonialPrevBtn.addEventListener("click", () => {
+      showSlide(currentSlide - 1);
+    });
+  }
+
+  if (testimonialNextBtn) {
+    testimonialNextBtn.addEventListener("click", () => {
+      showSlide(currentSlide + 1);
+    });
+  }
+}
 
 // Project Carousel
 const projectTrack = document.querySelector(".project-track");
-const projectCards = Array.from(
-  projectTrack.querySelectorAll(".project-slide"),
-);
+const projectCards = projectTrack
+  ? Array.from(projectTrack.querySelectorAll(".project-slide"))
+  : [];
 let currentProject = 0;
 let isSliding = false;
 
@@ -200,53 +204,64 @@ function slideToProject(newIndex, direction) {
   }, 700);
 }
 
-// Initial state
-applyPositions(getPositions(0, null));
+if (projectTrack && projectCards.length > 0) {
+  // Initial state
+  applyPositions(getPositions(0, null));
 
-document.querySelector(".project-btn--prev").addEventListener("click", () => {
-  const total = projectCards.length;
-  const newIndex = (currentProject - 1 + total) % total;
-  slideToProject(newIndex, "prev");
-});
+  const projectPrevBtn = document.querySelector(".project-btn--prev");
+  const projectNextBtn = document.querySelector(".project-btn--next");
 
-document.querySelector(".project-btn--next").addEventListener("click", () => {
-  const total = projectCards.length;
-  const newIndex = (currentProject + 1) % total;
-  slideToProject(newIndex, "next");
-});
+  if (projectPrevBtn) {
+    projectPrevBtn.addEventListener("click", () => {
+      const total = projectCards.length;
+      const newIndex = (currentProject - 1 + total) % total;
+      slideToProject(newIndex, "prev");
+    });
+  }
+
+  if (projectNextBtn) {
+    projectNextBtn.addEventListener("click", () => {
+      const total = projectCards.length;
+      const newIndex = (currentProject + 1) % total;
+      slideToProject(newIndex, "next");
+    });
+  }
+}
 
 // Project Carousel Swipe Support
 let touchStartX = 0;
 let touchEndX = 0;
 const swipeThreshold = 50;
 
-projectTrack.addEventListener(
-  "touchstart",
-  (e) => {
-    touchStartX = e.changedTouches[0].clientX;
-  },
-  { passive: true },
-);
+if (projectTrack && projectCards.length > 0) {
+  projectTrack.addEventListener(
+    "touchstart",
+    (e) => {
+      touchStartX = e.changedTouches[0].clientX;
+    },
+    { passive: true },
+  );
 
-projectTrack.addEventListener(
-  "touchend",
-  (e) => {
-    touchEndX = e.changedTouches[0].clientX;
-    const diff = touchStartX - touchEndX;
+  projectTrack.addEventListener(
+    "touchend",
+    (e) => {
+      touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
 
-    if (Math.abs(diff) > swipeThreshold) {
-      const total = projectCards.length;
-      if (diff > 0) {
-        const newIndex = (currentProject + 1) % total;
-        slideToProject(newIndex, "next");
-      } else {
-        const newIndex = (currentProject - 1 + total) % total;
-        slideToProject(newIndex, "prev");
+      if (Math.abs(diff) > swipeThreshold) {
+        const total = projectCards.length;
+        if (diff > 0) {
+          const newIndex = (currentProject + 1) % total;
+          slideToProject(newIndex, "next");
+        } else {
+          const newIndex = (currentProject - 1 + total) % total;
+          slideToProject(newIndex, "prev");
+        }
       }
-    }
-  },
-  { passive: true },
-);
+    },
+    { passive: true },
+  );
+}
 
 // Scroll Animations
 document.addEventListener("DOMContentLoaded", () => {
