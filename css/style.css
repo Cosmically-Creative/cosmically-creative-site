@@ -470,10 +470,107 @@ p {
   top: 3rem;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+.project-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 160rem;
+}
+
+.project-track {
+  position: relative;
+  width: 100%;
+  height: 58rem;
+  overflow: hidden;
+}
+
+.project-slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.project-desc {
+  text-align: left;
+  max-width: 50rem;
+  width: 100%;
+  margin-top: 2rem;
+  transition: opacity 0.6s ease;
+}
+
+.project-slide.slide-active {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.project-slide.slide-prev {
+  transform: translate(calc(-50% - 44rem), 0) scale(0.8);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.project-slide.slide-next {
+  transform: translate(calc(-50% + 44rem), 0) scale(0.8);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.project-slide.slide-prev .project-desc,
+.project-slide.slide-next .project-desc {
+  opacity: 0.15;
+}
+
+.project-slide.slide-hidden-left {
+  transform: translate(calc(-50% - 90rem), 0) scale(0.6);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.project-slide.slide-hidden-right {
+  transform: translate(calc(-50% + 90rem), 0) scale(0.6);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.project-controls {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-btn {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-btn:hover {
+  background-color: #ffe642;
+  border-color: #ffe642;
+  color: #0b1532;
+  transform: scale(1.05);
 }
 
 .tag {
@@ -500,7 +597,6 @@ p {
 
 .project-card:hover {
   box-shadow: 0 1rem 1rem 0 #2d54c7;
-  transform: scale(1.02);
 }
 
 .project-card--1 {

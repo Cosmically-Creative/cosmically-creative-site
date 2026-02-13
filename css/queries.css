@@ -20,8 +20,20 @@
   }
 
   .project-card {
-    width: 45rem;
-    height: 28rem;
+    width: 42rem;
+    height: 26rem;
+  }
+
+  .project-track {
+    height: 54rem;
+  }
+
+  .project-slide.slide-prev {
+    transform: translate(calc(-50% - 38rem), 0) scale(0.8);
+  }
+
+  .project-slide.slide-next {
+    transform: translate(calc(-50% + 38rem), 0) scale(0.8);
   }
 
   .steps-header {
@@ -78,8 +90,20 @@
   }
 
   .project-card {
-    width: 40rem;
-    height: 25rem;
+    width: 35rem;
+    height: 22rem;
+  }
+
+  .project-track {
+    height: 50rem;
+  }
+
+  .project-slide.slide-prev {
+    transform: translate(calc(-50% - 32rem), 0) scale(0.75);
+  }
+
+  .project-slide.slide-next {
+    transform: translate(calc(-50% + 32rem), 0) scale(0.75);
   }
 
   .contact-grid {
@@ -177,7 +201,7 @@
 
   .about-content {
     max-width: 90%;
-    padding: 10rem 0;
+    padding: 25rem 0;
   }
 
   .about-wrapper {
@@ -188,13 +212,33 @@
     bottom: -28rem;
   }
 
-  .project-grid {
-    grid-template-columns: 1fr;
+  .project-card {
+    width: 45rem;
+    height: 28rem;
   }
 
-  .project-card {
+  .project-desc {
+    max-width: 65rem;
+  }
+
+  .project-slide {
     width: 65rem;
-    height: 40rem;
+  }
+
+  .project-track {
+    height: 58rem;
+  }
+
+  .project-slide.slide-prev {
+    transform: translate(calc(-50% - 50rem), 0) scale(0.8);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .project-slide.slide-next {
+    transform: translate(calc(-50% + 50rem), 0) scale(0.8);
+    opacity: 0;
+    pointer-events: none;
   }
 
   .contact-grid {
@@ -297,18 +341,25 @@
 /************************/
 
 @media (max-width: 31em) {
-  .project-card {
-    width: 55rem;
-    height: 32rem;
-  }
-
   .about-content {
     padding-bottom: 30rem;
   }
 
   .project-card {
-    width: 42rem;
-    height: 28rem;
+    width: 38rem;
+    height: 24rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-desc {
+    max-width: 38rem;
+  }
+
+  .project-track {
+    height: 54rem;
   }
 
   .contact-grid {
