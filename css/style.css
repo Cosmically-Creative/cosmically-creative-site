@@ -18,7 +18,7 @@ Default: 1
 
 - Secondary: #ffe642, #2d54c7
 
-- Tints: 
+- Tints:
 
 - Shades:
 
@@ -313,6 +313,96 @@ p {
   width: 5rem;
 }
 
+/* Testimonial Section */
+.testimonial-section {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #2d54c7,
+    #2d54c7,
+    transparent
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+}
+
+.testimonial-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 120rem;
+  width: 100%;
+}
+
+.testimonial-slides {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.testimonial-slide.active {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.client-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.testimonial-controls {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial-btn {
+  background-color: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-btn:hover {
+  background-color: #ffe642;
+  border-color: #ffe642;
+  color: #0b1532;
+  transform: scale(1.05);
+}
+
 .about-section {
   display: flex;
   justify-content: center;
@@ -410,26 +500,30 @@ p {
 
 .project-card:hover {
   box-shadow: 0 1rem 1rem 0 #2d54c7;
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .project-card--1 {
-  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/ten8locker.jpg");
 }
 
 .project-card--2 {
-  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/christshands.jpg");
 }
 
 .project-card--3 {
-  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/terrytownpuppies.jpg");
 }
 
 .project-card--4 {
-  background-image: linear-gradient(rgba(11, 21, 50, 0.75)),
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
     url("/img/client-img/hopefoodpantry.jpg");
 }
 
