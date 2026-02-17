@@ -61,6 +61,22 @@ body {
   background-color: #0b1532;
   font-size: 2rem;
   overflow-x: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+body.page-transition-out {
+  opacity: 0;
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  background: #ffe642;
+  z-index: 10000;
 }
 
 .header {

@@ -280,3 +280,61 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   elementsToAnimate.forEach((el) => observer.observe(el));
 });
+
+// Scroll Progress Indicator
+const scrollProgress = document.querySelector(".scroll-progress");
+
+if (scrollProgress) {
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + "%";
+  });
+}
+
+// Page Transitions
+(function () {
+  // Fade in on page load
+  window.addEventListener("pageshow", (e) => {
+    // Handle bfcache (back/forward navigation)
+    if (e.persisted) {
+      document.body.classList.remove("page-transition-out");
+    }
+  });
+
+  // Intercept internal navigation links
+  document.addEventListener("click", (e) => {
+    const link = e.target.closest("a");
+    if (!link) return;
+
+    const href = link.getAttribute("href");
+    if (!href) return;
+
+    // Skip anchor-only links (same-page smooth scroll)
+    if (href.startsWith("#")) return;
+
+    // Skip external links, mailto, tel, javascript
+    if (
+      link.target === "_blank" ||
+      link.origin !== window.location.origin ||
+      href.startsWith("mailto:") ||
+      href.startsWith("tel:") ||
+      href.startsWith("javascript:")
+    )
+      return;
+
+    // Skip if modifier key held (open in new tab)
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    e.preventDefault();
+
+    // Fade out, then navigate
+    document.body.classList.add("page-transition-out");
+
+    setTimeout(() => {
+      window.location.href = link.href;
+    }, 300);
+  });
+})();
