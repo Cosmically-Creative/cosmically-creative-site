@@ -808,37 +808,71 @@ p {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-nav {
   padding-left: 5%;
   padding-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 7rem;
+}
+
+.footer-column {
   display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
 }
 
 .footer-links {
   list-style: none;
   display: flex;
+  flex-direction: column;
   gap: 5rem;
 }
 
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-link:hover {
+  color: #2d54c7;
+  background-color: transparent;
+}
+
 .footer-spacer {
-  height: 95rem;
+  height: 35rem;
 }
 
 .copyright-text {
-  position: absolute;
-  color: #0b1532;
-  bottom: 2rem;
-  left: 0;
-  right: 0;
+  color: #e6e6e6;
   text-align: center;
-  font-size: 1.5rem;
   font-family: "Space Grotesk", sans-serif;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 20rem;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 2rem;
+  right: 5%;
+  display: flex;
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  line-height: 1;
+}
+
+.back-to-top:hover {
+  color: #2d54c7;
 }
 
 /* Services Pages */
