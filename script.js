@@ -12,6 +12,8 @@ const navLinks = document.querySelectorAll(".main-nav-link");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
+    const isMobile = window.matchMedia("(max-width: 63em)").matches;
+    if (isMobile && link.closest(".nav-item-dropdown")) return;
     headerEl.classList.remove("nav-open");
   });
 });
