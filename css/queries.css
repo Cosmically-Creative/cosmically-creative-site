@@ -122,7 +122,7 @@
   .nav-links {
     background: linear-gradient(
       rgba(11, 21, 50, 0.95),
-      rgb(45, 84, 199, 0.95),
+      rgba(45, 84, 199, 0.95),
       rgba(11, 21, 50, 0.95)
     );
     position: absolute;
@@ -138,8 +138,8 @@
     border-bottom-left-radius: 100px;
     transition: all 0.4s ease-in;
     font-size: 3rem;
-    border-left: 3px solid rgb(255, 230, 66, 0.95);
-    border-bottom: 3px solid rgb(255, 230, 66, 0.95);
+    border-left: 3px solid rgba(255, 230, 66, 0.95);
+    border-bottom: 3px solid rgba(255, 230, 66, 0.95);
 
     opacity: 0;
     pointer-events: none;
@@ -206,13 +206,13 @@
     padding: 0.8rem 2rem;
     font-size: 2rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7); /* var(--color-white) at 70% opacity */
   }
 
   .dropdown-link:hover,
   .dropdown-link:active {
     background-color: transparent;
-    color: #ffe642;
+    color: var(--color-yellow);
   }
 
   .steps-header {
@@ -247,6 +247,26 @@
   .footer-column:nth-child(4) {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+  }
+
+  .testimonial-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .testimonial-btn img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .project-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .project-btn img {
+    width: 4rem;
+    height: 4rem;
   }
 }
 

@@ -40,6 +40,13 @@ Default: 1
 
 */
 
+:root {
+  --color-white: #fff;
+  --color-blue: #2d54c7;
+  --color-yellow: #ffe642;
+  --color-navy: #0b1532;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -57,8 +64,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #fff;
-  background-color: #0b1532;
+  color: var(--color-white);
+  background-color: var(--color-navy);
   font-size: 2rem;
   overflow-x: hidden;
   opacity: 1;
@@ -75,7 +82,7 @@ body.page-transition-out {
   left: 0;
   height: 4px;
   width: 0%;
-  background: #ffe642;
+  background: var(--color-yellow);
   z-index: 10000;
 }
 
@@ -107,7 +114,7 @@ body.page-transition-out {
 
 .main-nav-link:link,
 .main-nav-link:visited {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease;
 }
@@ -116,7 +123,7 @@ body.page-transition-out {
 .main-nav-link:active {
   transform: scale(1.1);
   text-decoration: none;
-  color: #2d54c7;
+  color: var(--color-blue);
 }
 
 .nav-links {
@@ -137,7 +144,7 @@ body.page-transition-out {
   transform: translateX(-50%);
   list-style: none;
   background: rgba(11, 21, 50, 0.5);
-  border: 3px solid #2d54c7;
+  border: 3px solid var(--color-blue);
   border-radius: 20px;
   padding: 1.5rem 0;
   min-width: 22rem;
@@ -159,7 +166,7 @@ body.page-transition-out {
 .dropdown-link:visited {
   display: block;
   padding: 1.2rem 2.5rem;
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
   font-size: 1.8rem;
@@ -169,8 +176,8 @@ body.page-transition-out {
 
 .dropdown-link:hover,
 .dropdown-link:active {
-  background-color: #2d54c7;
-  color: #ffe642;
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
 }
 
 .btn-mobile-nav {
@@ -225,7 +232,7 @@ h3 {
   font-size: 3rem;
   display: inline-block;
   padding-bottom: 3px;
-  border-bottom: 3px solid #ffe642;
+  border-bottom: 3px solid var(--color-yellow);
 }
 
 p {
@@ -235,7 +242,7 @@ p {
 .heading-icon {
   width: 3.6rem;
   height: 3.6rem;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .heading-wrapper {
@@ -255,11 +262,11 @@ p {
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
   background-color: transparent;
-  border: 3px solid #ffe642;
+  border: 3px solid var(--color-yellow);
   border-radius: 100px;
   padding: 1.6rem 3.2rem;
   transition: all 0.3s;
-  color: #fff;
+  color: var(--color-white);
   width: fit-content;
   height: fit-content;
   cursor: pointer;
@@ -267,8 +274,8 @@ p {
 
 .btn:hover,
 .btn:active {
-  background-color: #ffe642;
-  color: #0b1532;
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
   font-weight: 500;
   transform: scale(1.1);
 }
@@ -277,14 +284,14 @@ p {
   border: none !important;
   display: flex !important;
   align-items: center;
-  text-decoration: underline #ffe642 !important;
+  text-decoration: underline var(--color-yellow) !important;
   font-size: 2.2rem;
   padding: 0 !important;
 }
 
 .btn-alt:hover {
   background-color: transparent !important;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .logo {
@@ -340,7 +347,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 3.5rem;
-  border: 3px solid #2d54c7;
+  border: 3px solid var(--color-blue);
   border-radius: 20px;
   padding: 5rem;
   transition: transform 0.3s;
@@ -351,12 +358,12 @@ p {
 .services-link:link,
 .services-link:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .service-card:hover {
   transform: translateY(-1.2rem);
-  box-shadow: 0 1rem 1rem 0 #2d54c7;
+  box-shadow: 0 1rem 1rem 0 var(--color-blue);
 }
 
 .service-card-header {
@@ -382,8 +389,8 @@ p {
   background: linear-gradient(
     to bottom,
     transparent,
-    #2d54c7,
-    #2d54c7,
+    var(--color-blue),
+    var(--color-blue),
     transparent
   );
   display: flex;
@@ -447,8 +454,8 @@ p {
 
 .testimonial-btn {
   background-color: transparent;
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid var(--color-white);
+  color: var(--color-white);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -460,10 +467,15 @@ p {
   justify-content: center;
 }
 
+.testimonial-btn img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .testimonial-btn:hover {
-  background-color: #ffe642;
-  border-color: #ffe642;
-  color: #0b1532;
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: var(--color-navy);
   transform: scale(1.05);
 }
 
@@ -493,7 +505,7 @@ p {
   background-color: rgb(11, 21, 50, 0.4);
   padding: 5rem;
   border-radius: 5rem;
-  border: 3px solid #2d54c7;
+  border: 3px solid var(--color-blue);
 }
 
 .about-picture {
@@ -503,16 +515,16 @@ p {
   transform: translate(50%);
   width: 30rem;
   height: 30rem;
-  background-color: #fff;
+  background-color: var(--color-white);
   border-radius: 50%;
   background-image: url("/img/me.jpg");
   background-size: cover;
-  border: 3px solid #ffe642;
+  border: 3px solid var(--color-yellow);
   transition: all 0.3s;
 }
 
 .about-picture:hover {
-  box-shadow: 0 0 5rem 0 #ffe642;
+  box-shadow: 0 0 5rem 0 var(--color-yellow);
 }
 
 .project-section {
@@ -617,8 +629,8 @@ p {
 
 .project-btn {
   background-color: transparent;
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid var(--color-white);
+  color: var(--color-white);
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -630,15 +642,20 @@ p {
   justify-content: center;
 }
 
+.project-btn img {
+  width: 2rem;
+  height: 2rem;
+}
+
 .project-btn:hover {
-  background-color: #ffe642;
-  border-color: #ffe642;
-  color: #0b1532;
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+  color: var(--color-navy);
   transform: scale(1.05);
 }
 
 .tag {
-  background-color: #2d54c7;
+  background-color: var(--color-blue);
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
   font-size: 1.5rem;
@@ -654,13 +671,13 @@ p {
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  border: 3px solid #2d54c7;
+  border: 3px solid var(--color-blue);
   gap: 1rem;
   transition: all 0.4s;
 }
 
 .project-card:hover {
-  box-shadow: 0 1rem 1rem 0 #2d54c7;
+  box-shadow: 0 1rem 1rem 0 var(--color-blue);
 }
 
 .project-card--1 {
@@ -696,7 +713,7 @@ p {
 .project-card-link:link,
 .project-card-link:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .contact-section {
@@ -743,30 +760,30 @@ p {
 }
 
 .form-field {
-  border: 3px solid #2d54c7;
+  border: 3px solid var(--color-blue);
   border-radius: 2rem;
   padding: 2rem;
   background-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   width: 50rem;
   font-size: 2rem;
   font-family: "Space Grotesk", sans-serif;
 }
 
 .form-field::placeholder {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .btn-form {
   background-color: transparent;
-  color: #fff;
+  color: var(--color-white);
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
   background-color: transparent;
-  border: 3px solid #ffe642;
+  border: 3px solid var(--color-yellow);
   border-radius: 100px;
   padding: 1.6rem 3.2rem;
   transition: all 0.3s;
@@ -800,7 +817,7 @@ p {
 }
 
 .social-icon-wrapper:hover {
-  background-color: #2d54c7;
+  background-color: var(--color-blue);
   transform: scale(1.1);
 }
 
@@ -836,13 +853,13 @@ p {
 
 .footer-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   display: flex;
   gap: 1rem;
 }
 
 .footer-link:hover {
-  color: #2d54c7;
+  color: var(--color-blue);
   background-color: transparent;
 }
 
@@ -864,7 +881,7 @@ p {
   bottom: 2rem;
   right: 5%;
   display: flex;
-  color: #fff;
+  color: var(--color-white);
   font-size: 2.5rem;
   text-decoration: none;
   transition: all 0.3s;
@@ -872,7 +889,7 @@ p {
 }
 
 .back-to-top:hover {
-  color: #2d54c7;
+  color: var(--color-blue);
 }
 
 /* Services Pages */
@@ -934,11 +951,11 @@ p {
 }
 
 .yellow-border {
-  border: 3px solid #ffe642;
+  border: 3px solid var(--color-yellow);
 }
 
 .yellow-border:hover {
-  box-shadow: 0 1rem 1rem 0 #ffe642 !important;
+  box-shadow: 0 1rem 1rem 0 var(--color-yellow) !important;
 }
 
 /* Animations */
