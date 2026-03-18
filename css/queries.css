@@ -11,10 +11,6 @@
     max-width: 85%;
   }
 
-  .about-content {
-    max-width: 85%;
-  }
-
   .astronaut {
     height: 10rem;
   }
@@ -50,6 +46,10 @@
 
   .footer-nav {
     gap: 3rem;
+  }
+
+  .about-content {
+    padding: 30rem 3rem;
   }
 }
 
@@ -287,19 +287,6 @@
     grid-template-columns: 1fr;
   }
 
-  .about-content {
-    max-width: 90%;
-    padding: 25rem 0;
-  }
-
-  .about-wrapper {
-    padding: 3rem;
-  }
-
-  .about-picture {
-    bottom: -28rem;
-  }
-
   .project-card {
     width: 45rem;
     height: 28rem;
@@ -396,6 +383,24 @@
   .contact-grid {
     gap: 5rem;
   }
+
+  .about-picture {
+    width: 40%;
+  }
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .about-picture {
+    margin: 0;
+    grid-row: 2 / 3;
+    width: 75%;
+    height: auto;
+    justify-self: center;
+  }
 }
 
 /************************/
@@ -469,5 +474,10 @@
 
   .form-field {
     width: 38rem;
+  }
+
+  .about-picture {
+    width: 100%;
+    height: auto;
   }
 }
