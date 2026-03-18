@@ -109,7 +109,6 @@ body.page-transition-out {
 
 .main-nav-link {
   display: inline-block;
-  font-family: "Space Grotesk", sans-serif;
 }
 
 .main-nav-link:link,
@@ -168,7 +167,6 @@ body.page-transition-out {
   padding: 1.2rem 2.5rem;
   color: var(--color-white);
   text-decoration: none;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 1.8rem;
   transition: all 0.3s ease;
   white-space: nowrap;
@@ -213,10 +211,8 @@ body.page-transition-out {
 h1,
 h2,
 h3 {
-  font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -1.2px;
   text-align: center;
 }
 
@@ -260,7 +256,6 @@ p {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Space Grotesk", sans-serif;
   background-color: transparent;
   border: 3px solid var(--color-yellow);
   border-radius: 100px;
@@ -442,7 +437,6 @@ p {
 }
 
 .client-name {
-  font-family: "Space Grotesk", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -767,7 +761,6 @@ p {
   color: var(--color-white);
   width: 50rem;
   font-size: 2rem;
-  font-family: "Space Grotesk", sans-serif;
 }
 
 .form-field::placeholder {
@@ -780,7 +773,6 @@ p {
   display: inline-block;
   text-decoration: none;
   font-weight: 500;
-  font-family: "Space Grotesk", sans-serif;
   font-size: 2rem;
   background-color: transparent;
   border: 3px solid var(--color-yellow);
@@ -870,7 +862,6 @@ p {
 .copyright-text {
   color: #e6e6e6;
   text-align: center;
-  font-family: "Space Grotesk", sans-serif;
   padding: 2rem;
   width: 100%;
   margin-top: 20rem;
@@ -946,7 +937,6 @@ p {
 }
 
 .step-number {
-  font-family: "Rubik", sans-serif;
   font-size: 4rem;
 }
 
