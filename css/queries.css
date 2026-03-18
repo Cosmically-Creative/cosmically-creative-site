@@ -120,34 +120,23 @@
   }
 
   .nav-links {
-    background: linear-gradient(
-      rgba(11, 21, 50, 0.95),
-      rgba(45, 84, 199, 0.95),
-      rgba(11, 21, 50, 0.95)
-    );
+    background: linear-gradient(rgba(11, 21, 50, 0.9));
     position: absolute;
     top: 0;
     right: 0;
-    width: 30%;
-    height: 40vh;
+    width: 100%;
+    height: 100vh;
     transform: translateX(100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-bottom-left-radius: 100px;
     transition: all 0.4s ease-in;
-    font-size: 3rem;
-    border-left: 3px solid rgba(255, 230, 66, 0.95);
-    border-bottom: 3px solid rgba(255, 230, 66, 0.95);
+    font-size: 3.5rem;
 
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-  }
-
-  .nav-links {
-    height: auto;
     padding: 8rem 0 4rem;
     gap: 3rem;
   }
@@ -324,9 +313,6 @@
   .contact-img {
     grid-row: 1;
   }
-  .nav-links {
-    width: 40%;
-  }
 
   .steps-header {
     max-width: 85%;
@@ -414,9 +400,6 @@
   .hero {
     max-width: 90%;
   }
-  .nav-links {
-    width: 50%;
-  }
 
   .footer-nav {
     grid-template-columns: 1fr;
@@ -466,10 +449,6 @@
 
   .heading-sub {
     max-width: 80%;
-  }
-
-  .nav-links {
-    width: 60%;
   }
 
   .form-field {
