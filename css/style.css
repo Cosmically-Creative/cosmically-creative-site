@@ -693,6 +693,12 @@ p {
     url("/img/client-img/centralreformedchurch.png");
 }
 
+.project-card--6 {
+  background-image:
+    linear-gradient(rgba(11, 21, 50, 0.75)),
+    url("/img/client-img/hopeevangeelicalfreechurch.png");
+}
+
 .project-card-link:link,
 .project-card-link:visited {
   text-decoration: none;
