@@ -50,11 +50,15 @@ document.addEventListener("click", (e) => {
 const testimonials = [
   {
     text: "Working with Blake at Cosmically Creative was an incredibly valuable experience and made the process of developing a website seem very straightforward and easy-going. He provided several ideas and illustrations of what we could do for a website that would help connect the people in need and interested in what our organization is about and the services we have to offer. Blake communicated very well with us and kept us informed of the progress he was making through this process. He listens very well and works hard to understand our needs and desires for this website tool to be best for our organization. We highly recommend his services!!",
-    name: "&dash; Christ's Hands",
+    name: "&dash; Christ's Hands, Sioux Center, IA",
   },
   {
     text: "Cosmically Creative built my website exactly how I envisioned it—clean, functional, and professional. They were easy to work with, quick to respond, and clearly cared about getting every detail right. The end result speaks for itself. From our first conversation, they took the time to understand my business and what I needed the site to accomplish. I never felt rushed or out of the loop—updates came regularly, and my feedback was always taken seriously. I'd recommend them to anyone looking for a web developer who actually listens.",
-    name: "&dash; Valor Design Labs",
+    name: "&dash; Valor Design Labs, Pella, IA",
+  },
+  {
+    text: "Had a great experience working with Cosmically Creative on our church’s website. They took what we had and completely transformed it into something modern, easy to navigate, and visually aligned with who we are. The addition of online giving capabilities, videos, intuitive navigation, and a much stronger integration of our church’s branding feels cohesive, clean, and easy to use. Incredibly grateful for their work and would highly recommend Cosmically Creative to anyone looking for high-quality, thoughtful web design.",
+    name: "&dash; Derek Kowalski, Onawa, IA",
   },
 ];
 
