@@ -1,676 +1,771 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cosmically Creative is your one-stop shop for all things web design & development using the power of HTML, CSS, and JavaScript."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Cosmically Creative is your one-stop shop for all things web design & development using the power of HTML, CSS, and JavaScript."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="apple-icon" href="img/favicons/favicon-apple.webp" />
-    <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="icon" href="img/favicons/favicon.webp" />
+        <link rel="apple-icon" href="img/favicons/favicon-apple.webp" />
+        <link rel="manifest" href="manifest.webmanifest" />
+        <link rel="icon" href="img/favicons/favicon.webp" />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/queries.css" />
 
-    <script
-      defer
-      src="https://cloud.umami.is/script.js"
-      data-website-id="6213a9c8-ab7e-4ee2-9455-41c266adbb80"
-    ></script>
+        <script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="6213a9c8-ab7e-4ee2-9455-41c266adbb80"
+        ></script>
 
-    <title>
-      Cosmically Creative &dash; Custom Web Design & Development with HTML, CSS
-      & JS
-    </title>
-  </head>
-  <body>
-    <div class="scroll-progress"></div>
-    <header class="header">
-      <nav class="nav">
-        <a href="#home"
-          ><img class="logo" src="img/logo.svg" alt="Cosmically Creative Logo"
-        /></a>
-        <ul class="nav-links">
-          <li><a class="main-nav-link" href="#home">Home</a></li>
-          <li><a class="main-nav-link" href="#about">About</a></li>
-          <li><a class="main-nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item-dropdown">
-            <a class="main-nav-link" href="#services">Services</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-link" href="services/web-design/"
-                  >Web Design</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-link" href="services/web-development/"
-                  >Web Development</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-link" href="services/ecommerce/"
-                  >eCommerce</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-link" href="services/support/"
-                  >Ongoing Support</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-link" href="services/drone/"
-                  >Drone Services</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-link" href="services/web-hosting/"
-                  >Web Hosting</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <button class="btn-mobile-nav">
-          <img
-            class="icon-mobile-nav"
-            src="img/icons/menu.svg"
-            alt="menu icon"
-            name="open"
-          />
-          <img
-            class="icon-mobile-nav"
-            src="img/icons/close.svg"
-            alt="menu icon"
-            name="close"
-          />
-        </button>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero-section" id="home">
-        <div class="hero">
-          <h1 class="animate-on-scroll">
-            Trusted Web Development, Powered by Cosmic Creativity
-          </h1>
-          <p class="animate-on-scroll-delay">
-            At Cosmically Creative, I fuse creativity and custom code to craft
-            websites that help you stand out in the vast digital universe.
-          </p>
-          <div class="animate-on-scroll-delay">
-            <a href="#contact" class="btn">Initiate Launch</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="services-section" id="services">
-        <div class="heading-wrapper animate-on-scroll">
-          <img class="heading-icon" src="img/icons/star.svg" alt="star icon" />
-          <h2>Your Brand, Written in the Stars</h2>
-        </div>
-        <p class="animate-on-scroll">
-          My services put your brand into the spotlight with beautiful,
-          user-friendly websites that captivate your audience. I will ensure
-          your online presence shines with your brand’s unique personality. With
-          the power of HTML, CSS, and JavaScript, the sky is the limit for what
-          we can build together!
-        </p>
-        <div class="services-grid">
-          <a class="services-link animate-on-scroll" href="services/web-design/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/design.svg"
-                  alt="design icon"
-                />
-                <h3>Web Design</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Custom designs crafted with HTML and CSS to create clean,
-                modern, and user-friendly interfaces.
-              </p>
-            </div></a
-          >
-          <a
-            class="services-link animate-on-scroll-delay"
-            href="services/web-development/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/code.svg"
-                  alt="code icon"
-                />
-                <h3>Web Development</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Interactive, responsive websites built with HTML, CSS and
-                JavaScript for smooth performance and dynamic functionality.
-              </p>
-            </div>
-          </a>
-          <a class="services-link animate-on-scroll" href="services/ecommerce/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/shopify.svg"
-                  alt="shopify icon"
-                />
-                <h3>eCommerce</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Using the power of Shopify, I will build you a website that is
-                welcoming to customers so you can focus on selling your products
-                without the hassle.
-              </p>
-            </div>
-          </a>
-          <a
-            class="services-link animate-on-scroll-delay"
-            href="services/support/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/support.svg"
-                  alt="support icon"
-                />
-                <h3>Ongoing Support</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Even after your website launches, I'll be there to support you
-                every step of the way.
-              </p>
-            </div></a
-          >
-          <a class="services-link animate-on-scroll" href="services/drone/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/drone.svg"
-                  alt="drone icon"
-                />
-                <h3>Drone Services</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Stunning aerial photography and videography to showcase your
-                property, event, or brand from breathtaking new perspectives.
-              </p>
-            </div></a
-          >
-          <a
-            class="services-link animate-on-scroll-delay"
-            href="services/web-hosting/"
-            ><div class="service-card">
-              <div class="service-card-header">
-                <img
-                  class="service-icon"
-                  src="img/icons/computer.svg"
-                  alt="computer icon"
-                />
-                <h3>Web Hosting</h3>
-                <img
-                  class="arrow-icon"
-                  src="img/icons/right-arrow.svg"
-                  alt="right arrow icon"
-                />
-              </div>
-              <p>
-                Reliable web hosting powered by Nixihost with cPanel so your
-                website has a fast, secure home on the internet.
-              </p>
-            </div></a
-          >
-        </div>
-      </section>
-
-      <section class="testimonial-section">
-        <div class="testimonial-slider animate-on-scroll">
-          <div class="heading-wrapper">
-            <img
-              class="heading-icon"
-              src="img/icons/check.svg"
-              alt="check icon"
-            />
-            <h2>Testimonials</h2>
-          </div>
-          <div class="testimonial-slides"></div>
-          <div class="testimonial-controls">
-            <button
-              class="testimonial-btn testimonial-btn--prev"
-              aria-label="Previous testimonial"
-            >
-              <img src="img/icons/left-arrow.svg" alt="left arrow icon" />
-            </button>
-            <button
-              class="testimonial-btn testimonial-btn--next"
-              aria-label="Next testimonial"
-            >
-              <img src="img/icons/right-arrow.svg" alt="right arrow icon" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="about-section" id="about">
-        <div class="about-content">
-          <div class="heading-wrapper animate-on-scroll">
-            <img
-              class="heading-icon"
-              src="img/icons/person.svg"
-              alt="person icon"
-            />
-            <h2>About Me</h2>
-          </div>
-          <div class="about-wrapper">
-            <div class="about-picture animate-on-scroll-delay"></div>
-            <p class="animate-on-scroll">
-              Hi! I’m Blake, the creative mind behind Cosmically Creative, based
-              in Sioux Center, Iowa. My passion for technology and coding
-              inspired me to start this business, where I help others bring
-              their visions to life. <br />
-              <br />
-              I’ve always enjoyed tinkering with computers and finding creative
-              ways to solve problems. Now, I get to channel that passion into
-              designing stunning websites that help businesses shine. With the
-              power of HTML, CSS, and JavaScript I've learned that the
-              customization options are endless. As someone who loves building
-              with no limits, it was a game changer for me. <br />
-              <br />
-              What I love most about working with clients is the shared
-              excitement of building something new. I know what it’s like to
-              start a business from scratch, and I’m here to help you make your
-              brand stand out with designs that help you reach your audience
-              more effectively.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="project-section">
-        <div class="heading-wrapper animate-on-scroll">
-          <img
-            class="heading-icon"
-            src="img/icons/hammer.svg"
-            alt="hammer icon"
-          />
-          <h2>Past Projects</h2>
-        </div>
-        <img class="astronaut" src="img/astronaut.webp" alt="astronaut" />
-        <div class="project-carousel animate-on-scroll">
-          <div class="project-track">
-            <div class="project-slide">
-              <a
-                href="https://valordesignlabs.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--1">
-                  <h3>Valor Design Labs</h3>
-                  <span class="tag">Shopify</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                A Shopify store for a first responder merchandise brand. Getting
-                into the e-commerce side of web development was a blast,
-                building out product collections for challenge coins, patches,
-                and more.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://christs-hands.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--2">
-                  <h3>Christ's Hands</h3>
-                  <span class="tag">Webflow</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                My very first client project. Webflow made it easy to get
-                started while still giving me plenty of room to customize. I
-                really believe in what this nonprofit is doing for the
-                community, which made the whole process that much more
-                rewarding.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://terrytownpuppies.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--3">
-                  <h3>Terry Town Puppies</h3>
-                  <span class="tag">Wix</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                A site for a family-run puppy breeder with 40+ years of
-                experience. Wix can be challenging with its limitations, but it
-                makes it easy for the client to manage on their own. Had a lot
-                of fun dialing in the color palette on this one.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://hopefoodpantrysc.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--4">
-                  <h3>Hope Food Pantry</h3>
-                  <span class="tag">HTML, CSS, and JS</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                My first client website built entirely from scratch with HTML,
-                CSS, and JavaScript. No page builders, no templates, just custom
-                code. I'm super proud of how this one turned out for a local
-                food pantry serving the Sioux Center community.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://centralreformed.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--5">
-                  <h3>Central Reformed Church</h3>
-                  <span class="tag">Wix</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                Built in Wix so the church staff can easily update content
-                themselves, which was a big improvement over their old site. Had
-                a quick turnaround on this one and the team was great to work
-                with.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://hope4onawa.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--6">
-                  <h3>Hope E. Free Church</h3>
-                  <span class="tag">Wix</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                This project was a complete website overhaul for a church in
-                Onawa, IA. They wanted the design to match their brand colors
-                with the ability to easily update content each week.
-              </p>
-            </div>
-            <div class="project-slide">
-              <a
-                href="https://siouxdiamonddetailing.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-card-link"
-                ><div class="project-card project-card--7">
-                  <h3>Sioux Diamond Detailing</h3>
-                  <span class="tag">HTML, CSS, and JS</span>
-                </div>
-              </a>
-              <p class="project-desc">
-                A really fun project I did for an extremely busy auto detailing
-                business in Sioux Center, IA. The client wanted an easy place
-                for people to go view his past work, contact him, and showcase
-                his team.
-              </p>
-            </div>
-          </div>
-          <div class="project-controls">
-            <button
-              class="project-btn project-btn--prev"
-              aria-label="Previous project"
-            >
-              <img src="img/icons/left-arrow.svg" alt="left arrow icon" />
-            </button>
-            <button
-              class="project-btn project-btn--next"
-              aria-label="Next project"
-            >
-              <img src="img/icons/right-arrow.svg" alt="right arrow icon" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contact">
-        <div class="heading-wrapper animate-on-scroll">
-          <img
-            class="heading-icon"
-            src="img/icons/chat.svg"
-            alt="contact icon"
-          />
-          <h2>Contact Me</h2>
-        </div>
-        <p class="heading-sub animate-on-scroll">
-          Let’s connect! Whether you have a quick question, need a custom quote,
-          or just want to discuss ideas, feel free to reach out. Drop me a
-          message through the form, email, or phone, and I’ll get back to you
-          promptly so we can start building something great together.
-        </p>
-        <div class="contact-grid animate-on-scroll">
-          <div class="contact-img">
-            <img src="img/rocket-launch.svg" alt="rocket taking off" />
-          </div>
-          <form
-            class="contact-form"
-            name="contact"
-            action="https://formbold.com/s/67LMK"
-            method="POST"
-          >
-            <div>
-              <label for="full-name"></label>
-              <input
-                class="form-field"
-                id="full-name"
-                type="text"
-                placeholder="Full Name"
-                name="name"
-                required
-              />
-            </div>
-            <div>
-              <label for="email"></label>
-              <input
-                class="form-field"
-                id="email"
-                type="email"
-                placeholder="Email"
-                name="email"
-                required
-              />
-            </div>
-            <div>
-              <label for="message"></label>
-              <textarea
-                class="form-field"
-                id="message"
-                name="message"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-form">Send Message</button>
-          </form>
-        </div>
-        <div class="footer-spacer"></div>
-        <footer class="footer">
-          <nav class="footer-nav">
-            <div class="footer-column">
-              <a href="#home"
-                ><img
-                  class="logo"
-                  src="img/logo.svg"
-                  alt="Cosmically Creative Logo"
-              /></a>
-              <p>Trusted Web Development, Powered by Cosmic Creativity</p>
-              <div class="social-links">
-                <div class="social-icon-wrapper">
-                  <a
-                    href="https://www.facebook.com/cosmicallycreative"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+        <title>
+            Cosmically Creative &dash; Custom Web Design & Development with
+            HTML, CSS & JS
+        </title>
+    </head>
+    <body>
+        <div class="scroll-progress"></div>
+        <header class="header">
+            <nav class="nav">
+                <a href="#home"
+                    ><img
+                        class="logo"
+                        src="img/logo.svg"
+                        alt="Cosmically Creative Logo"
+                /></a>
+                <ul class="nav-links">
+                    <li><a class="main-nav-link" href="#home">Home</a></li>
+                    <li><a class="main-nav-link" href="#about">About</a></li>
+                    <li>
+                        <a class="main-nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item-dropdown">
+                        <a class="main-nav-link" href="#services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a
+                                    class="dropdown-link"
+                                    href="services/web-design/"
+                                    >Web Design</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-link"
+                                    href="services/web-development/"
+                                    >Web Development</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-link"
+                                    href="services/web-hosting/"
+                                    >Web Hosting</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-link"
+                                    href="services/support/"
+                                    >Ongoing Support</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="dropdown-link"
+                                    href="services/graphic-design/"
+                                    >Graphic Design</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-link" href="services/drone/"
+                                    >Drone Services</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn-mobile-nav">
                     <img
-                      class="social-icon"
-                      src="img/icons/social/facebook.svg"
-                      alt="facebook icon"
+                        class="icon-mobile-nav"
+                        src="img/icons/menu.svg"
+                        alt="menu icon"
+                        name="open"
                     />
-                  </a>
-                </div>
-                <div class="social-icon-wrapper">
-                  <a
-                    href="https://www.instagram.com/cosmicallycreative"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
                     <img
-                      class="social-icon"
-                      src="img/icons/social/instagram.svg"
-                      alt="instagram icon"
+                        class="icon-mobile-nav"
+                        src="img/icons/close.svg"
+                        alt="menu icon"
+                        name="close"
                     />
-                  </a>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-section" id="home">
+                <div class="hero">
+                    <h1 class="animate-on-scroll">
+                        Trusted Web Development, Powered by Cosmic Creativity
+                    </h1>
+                    <p class="animate-on-scroll-delay">
+                        At Cosmically Creative, I fuse creativity and custom
+                        code to craft websites that help you stand out in the
+                        vast digital universe.
+                    </p>
+                    <div class="animate-on-scroll-delay">
+                        <a href="#contact" class="btn">Initiate Launch</a>
+                    </div>
                 </div>
-                <div class="social-icon-wrapper">
-                  <a
-                    href="https://github.com/Cosmically-Creative"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+            </section>
+
+            <section class="services-section" id="services">
+                <div class="heading-wrapper animate-on-scroll">
                     <img
-                      class="social-icon"
-                      src="img/icons/social/github.svg"
-                      alt="github icon"
+                        class="heading-icon"
+                        src="img/icons/star.svg"
+                        alt="star icon"
                     />
-                  </a>
+                    <h2>Your Brand, Written in the Stars</h2>
                 </div>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h3>Navigation</h3>
-              <ul class="footer-links">
-                <li><a class="main-nav-link" href="#home">Home</a></li>
-                <li><a class="main-nav-link" href="#about">About</a></li>
-                <li><a class="main-nav-link" href="#contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Services</h3>
-              <ul class="footer-links">
-                <li>
-                  <a class="main-nav-link" href="services/web-design/"
-                    >Web Design</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="services/web-development/"
-                    >Web Development</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="services/ecommerce/"
-                    >eCommerce</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="services/support/"
-                    >Ongoing Support</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="services/drone/"
-                    >Drone Services</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link" href="services/web-hosting/"
-                    >Web Hosting</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h3>Get in Touch</h3>
-              <a
-                class="social-icon-wrapper footer-link"
-                href="mailto:blake@cosmicallycreative.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+                <p class="animate-on-scroll">
+                    My services put your brand into the spotlight with
+                    beautiful, user-friendly websites that captivate your
+                    audience. I will ensure your online presence shines with
+                    your brand’s unique personality. With the power of HTML,
+                    CSS, and JavaScript, the sky is the limit for what we can
+                    build together!
+                </p>
+                <div class="services-grid">
+                    <a
+                        class="services-link animate-on-scroll"
+                        href="services/web-design/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/design.svg"
+                                    alt="design icon"
+                                />
+                                <h3>Web Design</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Custom designs crafted with HTML and CSS to
+                                create clean, modern, and user-friendly
+                                interfaces.
+                            </p>
+                        </div></a
+                    >
+                    <a
+                        class="services-link animate-on-scroll-delay"
+                        href="services/web-development/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/code.svg"
+                                    alt="code icon"
+                                />
+                                <h3>Web Development</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Interactive, responsive websites built with
+                                HTML, CSS, and JavaScript for smooth performance
+                                and dynamic functionality.
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        class="services-link animate-on-scroll-delay"
+                        href="services/web-hosting/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/computer.svg"
+                                    alt="computer icon"
+                                />
+                                <h3>Web Hosting</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Reliable web hosting powered by ArkHost with
+                                DirectAdmin so your website has a fast, secure
+                                home on the internet.
+                            </p>
+                        </div></a
+                    >
+                    <a
+                        class="services-link animate-on-scroll-delay"
+                        href="services/support/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/support.svg"
+                                    alt="support icon"
+                                />
+                                <h3>Ongoing Support</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Even after your website launches, I'll be there
+                                to support you every step of the way.
+                            </p>
+                        </div></a
+                    >
+                    <a
+                        class="services-link animate-on-scroll"
+                        href="services/graphic-design/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/design.svg"
+                                    alt="design icon"
+                                />
+                                <h3>Graphic Design</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Custom logos, social media graphics, and other
+                                design elements to keep your business consistent
+                                and professional.
+                            </p>
+                        </div>
+                    </a>
+                    <a
+                        class="services-link animate-on-scroll"
+                        href="services/drone/"
+                        ><div class="service-card">
+                            <div class="service-card-header">
+                                <img
+                                    class="service-icon"
+                                    src="img/icons/drone.svg"
+                                    alt="drone icon"
+                                />
+                                <h3>Drone Services</h3>
+                                <img
+                                    class="arrow-icon"
+                                    src="img/icons/right-arrow.svg"
+                                    alt="right arrow icon"
+                                />
+                            </div>
+                            <p>
+                                Stunning aerial photography and videography to
+                                showcase your property, event, or brand from
+                                breathtaking new perspectives.
+                            </p>
+                        </div></a
+                    >
+                </div>
+            </section>
+
+            <section class="testimonial-section">
+                <div class="testimonial-slider animate-on-scroll">
+                    <div class="heading-wrapper">
+                        <img
+                            class="heading-icon"
+                            src="img/icons/check.svg"
+                            alt="check icon"
+                        />
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="testimonial-slides"></div>
+                    <div class="testimonial-controls">
+                        <button
+                            class="testimonial-btn testimonial-btn--prev"
+                            aria-label="Previous testimonial"
+                        >
+                            <img
+                                src="img/icons/left-arrow.svg"
+                                alt="left arrow icon"
+                            />
+                        </button>
+                        <button
+                            class="testimonial-btn testimonial-btn--next"
+                            aria-label="Next testimonial"
+                        >
+                            <img
+                                src="img/icons/right-arrow.svg"
+                                alt="right arrow icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section" id="about">
+                <div class="about-content">
+                    <div class="heading-wrapper animate-on-scroll">
+                        <img
+                            class="heading-icon"
+                            src="img/icons/person.svg"
+                            alt="person icon"
+                        />
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="about-wrapper">
+                        <div
+                            class="about-picture animate-on-scroll-delay"
+                        ></div>
+                        <p class="animate-on-scroll">
+                            Hi! I’m Blake, the creative mind behind Cosmically
+                            Creative, based in Sioux Center, Iowa. My passion
+                            for technology and coding inspired me to start this
+                            business, where I help others bring their visions to
+                            life. <br />
+                            <br />
+                            I’ve always enjoyed tinkering with computers and
+                            finding creative ways to solve problems. Now, I get
+                            to channel that passion into designing stunning
+                            websites that help businesses shine. With the power
+                            of HTML, CSS, and JavaScript, I've learned that the
+                            customization options are endless. As someone who
+                            loves building with no limits, I found it to be a
+                            game changer. <br />
+                            <br />
+                            What I love most about working with clients is the
+                            shared excitement of building something new. I know
+                            what it’s like to start a business from scratch, and
+                            I’m here to help you make your brand stand out with
+                            designs that help you reach your audience more
+                            effectively.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section">
+                <div class="heading-wrapper animate-on-scroll">
+                    <img
+                        class="heading-icon"
+                        src="img/icons/hammer.svg"
+                        alt="hammer icon"
+                    />
+                    <h2>Past Projects</h2>
+                </div>
                 <img
-                  class="social-icon"
-                  src="img/icons/social/email.svg"
-                  alt="email icon"
-                />blake@cosmicallycreative.com
-              </a>
-              <a
-                class="social-icon-wrapper footer-link"
-                href="tel:+17125786203"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  class="social-icon"
-                  src="img/icons/social/phone.svg"
-                  alt="phone icon"
-                />712-578-6203
-              </a>
-            </div>
-          </nav>
-          <p class="copyright-text">Cosmically Creative &copy; 2026</p>
-          <a href="#home" class="back-to-top" aria-label="Back to top"
-            >Back to Top &#8593;</a
-          >
-        </footer>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+                    class="astronaut"
+                    src="img/astronaut.webp"
+                    alt="astronaut"
+                />
+                <div class="project-carousel animate-on-scroll">
+                    <div class="project-track">
+                        <div class="project-slide">
+                            <a
+                                href="https://valordesignlabs.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--1">
+                                    <h3>Valor Design Labs</h3>
+                                    <span class="tag">Shopify</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                A Shopify store for a first responder
+                                merchandise brand. Getting into the e-commerce
+                                side of web development was a blast, building
+                                out product collections for challenge coins,
+                                patches, and more.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://christs-hands.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--2">
+                                    <h3>Christ's Hands</h3>
+                                    <span class="tag">Webflow</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                My very first client project. Webflow made it
+                                easy to get started while still giving me plenty
+                                of room to customize. I really believe in what
+                                this nonprofit is doing for the community, which
+                                made the whole process that much more rewarding.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://terrytownpuppies.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--3">
+                                    <h3>Terry Town Puppies</h3>
+                                    <span class="tag">Wix</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                A site for a family-run puppy breeder with 40+
+                                years of experience. Wix can be challenging with
+                                its limitations, but it makes it easy for the
+                                client to manage on their own. Had a lot of fun
+                                dialing in the color palette on this one.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://hopefoodpantrysc.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--4">
+                                    <h3>Hope Food Pantry</h3>
+                                    <span class="tag">HTML, CSS, and JS</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                My first client website built entirely from
+                                scratch with HTML, CSS, and JavaScript. No page
+                                builders, no templates, just custom code. I'm
+                                super proud of how this one turned out for a
+                                local food pantry serving the Sioux Center
+                                community.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://centralreformed.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--5">
+                                    <h3>Central Reformed Church</h3>
+                                    <span class="tag">Wix</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                Built in Wix so the church staff can easily
+                                update content themselves, which was a big
+                                improvement over their old site. Had a quick
+                                turnaround on this one and the team was great to
+                                work with.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://hope4onawa.org"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--6">
+                                    <h3>Hope E. Free Church</h3>
+                                    <span class="tag">Wix</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                This project was a complete website overhaul for
+                                a church in Onawa, IA. They wanted the design to
+                                match their brand colors with the ability to
+                                easily update content each week.
+                            </p>
+                        </div>
+                        <div class="project-slide">
+                            <a
+                                href="https://siouxdiamonddetailing.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-card-link"
+                                ><div class="project-card project-card--7">
+                                    <h3>Sioux Diamond Detailing</h3>
+                                    <span class="tag">HTML, CSS, and JS</span>
+                                </div>
+                            </a>
+                            <p class="project-desc">
+                                A really fun project I did for an extremely busy
+                                auto detailing business in Sioux Center, IA. The
+                                client wanted an easy place for people to go
+                                view his past work, contact him, and showcase
+                                his team.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-controls">
+                        <button
+                            class="project-btn project-btn--prev"
+                            aria-label="Previous project"
+                        >
+                            <img
+                                src="img/icons/left-arrow.svg"
+                                alt="left arrow icon"
+                            />
+                        </button>
+                        <button
+                            class="project-btn project-btn--next"
+                            aria-label="Next project"
+                        >
+                            <img
+                                src="img/icons/right-arrow.svg"
+                                alt="right arrow icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="heading-wrapper animate-on-scroll">
+                    <img
+                        class="heading-icon"
+                        src="img/icons/chat.svg"
+                        alt="contact icon"
+                    />
+                    <h2>Contact Me</h2>
+                </div>
+                <p class="heading-sub animate-on-scroll">
+                    Let’s connect! Whether you have a quick question, need a
+                    custom quote, or just want to discuss ideas, feel free to
+                    reach out. Drop me a message through the form, email, or
+                    phone, and I’ll get back to you promptly so we can start
+                    building something great together.
+                </p>
+                <div class="contact-grid animate-on-scroll">
+                    <div class="contact-img">
+                        <img
+                            src="img/rocket-launch.svg"
+                            alt="rocket taking off"
+                        />
+                    </div>
+                    <form
+                        class="contact-form"
+                        name="contact"
+                        action="https://formbold.com/s/67LMK"
+                        method="POST"
+                    >
+                        <div>
+                            <label for="full-name"></label>
+                            <input
+                                class="form-field"
+                                id="full-name"
+                                type="text"
+                                placeholder="Full Name"
+                                name="name"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input
+                                class="form-field"
+                                id="email"
+                                type="email"
+                                placeholder="Email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea
+                                class="form-field"
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                                required
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-form">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="footer-spacer"></div>
+                <footer class="footer">
+                    <nav class="footer-nav">
+                        <div class="footer-column">
+                            <a href="#home"
+                                ><img
+                                    class="logo"
+                                    src="img/logo.svg"
+                                    alt="Cosmically Creative Logo"
+                            /></a>
+                            <p>
+                                Trusted Web Development, Powered by Cosmic
+                                Creativity
+                            </p>
+                            <div class="social-links">
+                                <div class="social-icon-wrapper">
+                                    <a
+                                        href="https://www.facebook.com/cosmicallycreative"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            class="social-icon"
+                                            src="img/icons/social/facebook.svg"
+                                            alt="facebook icon"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="social-icon-wrapper">
+                                    <a
+                                        href="https://www.instagram.com/cosmicallycreative"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            class="social-icon"
+                                            src="img/icons/social/instagram.svg"
+                                            alt="instagram icon"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="social-icon-wrapper">
+                                    <a
+                                        href="https://github.com/Cosmically-Creative"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            class="social-icon"
+                                            src="img/icons/social/github.svg"
+                                            alt="github icon"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Navigation</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a class="main-nav-link" href="#home"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="main-nav-link" href="#about"
+                                        >About</a
+                                    >
+                                </li>
+                                <li>
+                                    <a class="main-nav-link" href="#contact"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Services</h3>
+                            <ul class="footer-links">
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/web-design/"
+                                        >Web Design</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/web-development/"
+                                        >Web Development</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/web-hosting/"
+                                        >Web Hosting</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/support/"
+                                        >Ongoing Support</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/graphic-design/"
+                                        >Graphic Design</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="main-nav-link"
+                                        href="services/drone/"
+                                        >Drone Services</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Get in Touch</h3>
+                            <a
+                                class="social-icon-wrapper footer-link"
+                                href="mailto:blake@cosmicallycreative.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="social-icon"
+                                    src="img/icons/social/email.svg"
+                                    alt="email icon"
+                                />blake@cosmicallycreative.com
+                            </a>
+                            <a
+                                class="social-icon-wrapper footer-link"
+                                href="tel:+17125786203"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img
+                                    class="social-icon"
+                                    src="img/icons/social/phone.svg"
+                                    alt="phone icon"
+                                />712-578-6203
+                            </a>
+                        </div>
+                    </nav>
+                    <p class="copyright-text">
+                        Cosmically Creative &copy; 2026
+                    </p>
+                    <a href="#home" class="back-to-top" aria-label="Back to top"
+                        >Back to Top &#8593;</a
+                    >
+                </footer>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
 </html>
