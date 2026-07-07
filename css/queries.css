@@ -40,6 +40,10 @@
     max-width: 90%;
   }
 
+  .legal-content {
+    max-width: 90%;
+  }
+
   .heading-sub {
     max-width: 100rem;
   }
@@ -212,6 +216,10 @@
     max-width: 95%;
   }
 
+  .legal-content {
+    max-width: 95%;
+  }
+
   .contact-img {
     width: 40rem;
   }
@@ -323,6 +331,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 5rem;
+  }
+
+  .legal-content {
+    max-width: 85%;
   }
 
   .steps-section .service-card:nth-child(1) {

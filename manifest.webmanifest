@@ -1,13 +1,17 @@
 {
+  "name": "Cosmically Creative",
+  "short_name": "Cosmically Creative",
+  "theme_color": "#0b1532",
+  "background_color": "#0b1532",
   "icons": [
     {
       "src": "img/favicons/favicon-192.webp",
-      "type": "image/png",
+      "type": "image/webp",
       "sizes": "192x192"
     },
     {
       "src": "img/favicons/favicon-512.webp",
-      "type": "image/png",
+      "type": "image/webp",
       "sizes": "512x512"
     }
   ]
