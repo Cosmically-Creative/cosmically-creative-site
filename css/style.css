@@ -45,6 +45,7 @@ Default: 1
     --color-blue: #2d54c7;
     --color-yellow: #ffe642;
     --color-navy: #0b1532;
+    --color-navy-darker: #0a132d;
 }
 
 * {
@@ -377,6 +378,111 @@ p {
 
 .service-icon {
     width: 5rem;
+}
+
+/* Pricing Section */
+
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    margin-bottom: 30rem;
+    text-align: center;
+}
+
+.pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 7rem;
+    width: 100%;
+}
+
+.pricing-card-wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+}
+
+.pricing-card-wrap--wide {
+    flex: 1 1 100%;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+    flex: 1;
+    width: 100%;
+    border: 3px solid var(--color-blue);
+    border-radius: 20px;
+    padding: 5rem;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.pricing-card > .btn {
+    margin-top: auto;
+}
+
+.pricing-description {
+    text-align: left;
+}
+
+.pricing-card:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 1rem 1rem 0 var(--color-blue);
+}
+
+.pricing-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    width: 100%;
+}
+
+.pricing-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 20rem;
+    text-align: left;
+    background-color: var(--color-navy-darker);
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.pricing-item h4 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.pricing-item-price {
+    color: var(--color-yellow);
+    font-weight: 700;
+}
+
+.pricing-price {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--color-yellow);
+    line-height: 1;
+}
+
+.pricing-price span {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-white);
+    display: block;
+    margin-bottom: 1rem;
 }
 
 /* Testimonial Section */

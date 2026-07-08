@@ -11,6 +11,10 @@
     max-width: 85%;
   }
 
+  .pricing-section {
+    max-width: 85%;
+  }
+
   .astronaut {
     height: 10rem;
   }
@@ -94,6 +98,14 @@
   }
 
   .service-card {
+    padding: 3rem;
+  }
+
+  .pricing-cards {
+    gap: 3rem;
+  }
+
+  .pricing-card {
     padding: 3rem;
   }
 
@@ -280,8 +292,24 @@
     max-width: 90%;
   }
 
+  .pricing-section {
+    max-width: 90%;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+  }
+
+  .pricing-card-wrap {
+    max-width: 100%;
+  }
+
+  .pricing-price {
+    font-size: 4rem;
   }
 
   .project-card {
