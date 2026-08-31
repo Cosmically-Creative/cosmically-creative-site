@@ -867,6 +867,7 @@ p {
     background-color: transparent;
     color: var(--color-white);
     width: 50rem;
+    font-family: "Rubik", sans-serif;
     font-size: 2rem;
 }
 
@@ -879,6 +880,7 @@ p {
     color: var(--color-white);
     display: inline-block;
     text-decoration: none;
+    font-family: "Rubik", sans-serif;
     font-weight: 500;
     font-size: 2rem;
     background-color: transparent;
