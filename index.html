@@ -7,6 +7,17 @@
             name="description"
             content="Cosmically Creative is your one-stop shop for all things web design & development using the power of HTML, CSS, and JavaScript."
         />
+        <link rel="canonical" href="https://www.cosmicallycreative.com/" />
+        <meta
+            property="og:title"
+            content="Cosmically Creative | Custom Web Design &amp; Development"
+        />
+        <meta
+            property="og:description"
+            content="Cosmically Creative is your one-stop shop for all things web design &amp; development using the power of HTML, CSS, and JavaScript."
+        />
+        <meta property="og:url" content="https://www.cosmicallycreative.com/" />
+        <meta name="twitter:card" content="summary" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -28,8 +39,7 @@
         ></script>
 
         <title>
-            Cosmically Creative &dash; Custom Web Design & Development with
-            HTML, CSS & JS
+            Cosmically Creative | Custom Web Design & Development
         </title>
         <script type="application/ld+json">
             {
@@ -61,6 +71,7 @@
         </script>
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         <div class="scroll-progress"></div>
         <header class="header">
             <nav class="nav">
@@ -139,7 +150,7 @@
             </nav>
         </header>
 
-        <main>
+        <main id="main">
             <section class="hero-section" id="home">
                 <div class="hero">
                     <h1 class="animate-on-scroll">
@@ -691,34 +702,39 @@
                         method="POST"
                     >
                         <div>
-                            <label for="full-name"></label>
+                            <label class="sr-only" for="full-name"
+                                >Full Name</label
+                            >
                             <input
                                 class="form-field"
                                 id="full-name"
                                 type="text"
                                 placeholder="Full Name"
                                 name="name"
+                                autocomplete="name"
                                 required
                             />
                         </div>
                         <div>
-                            <label for="email"></label>
+                            <label class="sr-only" for="email">Email</label>
                             <input
                                 class="form-field"
                                 id="email"
                                 type="email"
                                 placeholder="Email"
                                 name="email"
+                                autocomplete="email"
                                 required
                             />
                         </div>
                         <div>
-                            <label for="message"></label>
+                            <label class="sr-only" for="message">Message</label>
                             <textarea
                                 class="form-field"
                                 id="message"
                                 name="message"
                                 placeholder="Message"
+                                autocomplete="off"
                                 required
                             ></textarea>
                         </div>

@@ -7,6 +7,23 @@
             name="description"
             content="With the design set, now comes the real fun. Using the power of HTML, CSS, and JavaScript, your website gets the personal touch it deserves. No templates, no shortcuts, just handcrafted code that brings the website to life. "
         />
+        <link
+            rel="canonical"
+            href="https://www.cosmicallycreative.com/services/web-development/"
+        />
+        <meta
+            property="og:title"
+            content="Custom Web Development with HTML, CSS &amp; JavaScript – Cosmically Creative"
+        />
+        <meta
+            property="og:description"
+            content="With the design set, now comes the real fun. Using the power of HTML, CSS, and JavaScript, your website gets the personal touch it deserves. No templates, no shortcuts, just handcrafted code that brings the website to life."
+        />
+        <meta
+            property="og:url"
+            content="https://www.cosmicallycreative.com/services/web-development/"
+        />
+        <meta name="twitter:card" content="summary" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -56,6 +73,7 @@
   </head>
 
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
         <div class="scroll-progress"></div>
         <header class="header">
             <nav class="nav">
@@ -74,7 +92,9 @@
                         <a class="main-nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item-dropdown">
-                        <a class="main-nav-link" href="#services">Services</a>
+                        <a class="main-nav-link" href="../../#services"
+                            >Services</a
+                        >
                         <ul class="dropdown-menu">
                             <li>
                                 <a class="dropdown-link" href="../web-design/"
@@ -129,7 +149,7 @@
                 </button>
             </nav>
         </header>
-        <main>
+        <main id="main">
             <section class="steps-section">
                 <div class="steps-header">
                     <h1>Web Development</h1>
@@ -180,19 +200,6 @@
                             usability without distracting from your message.
                         </p>
                     </div>
-                    <div class="service-card fifth-step">
-                        <div class="service-card-header">
-                            <span class="step-number">5</span>
-                            <h3>Launch</h3>
-                        </div>
-                        <p>
-                            We made it! It's launch day. I will handle the
-                            deployment process to make sure everything runs
-                            smoothly. I'll buy your domain if you don't already
-                            have one, upload your files to your hosting provider
-                            of choice, and that's it!
-                        </p>
-                    </div>
                     <div class="service-card">
                         <div class="service-card-header">
                             <span class="step-number">4</span>
@@ -204,6 +211,19 @@
                             website loads quickly and works seamlessly on any
                             device. This ensures a better user experience and
                             stronger search engine performance.
+                        </p>
+                    </div>
+                    <div class="service-card fifth-step">
+                        <div class="service-card-header">
+                            <span class="step-number">5</span>
+                            <h3>Launch</h3>
+                        </div>
+                        <p>
+                            We made it! It's launch day. I will handle the
+                            deployment process to make sure everything runs
+                            smoothly. I'll buy your domain if you don't already
+                            have one, upload your files to your hosting provider
+                            of choice, and that's it!
                         </p>
                     </div>
                     <a href="#contact" class="btn">Let's get started!</a>
@@ -240,34 +260,39 @@
                         method="POST"
                     >
                         <div>
-                            <label for="full-name"></label>
+                            <label class="sr-only" for="full-name"
+                                >Full Name</label
+                            >
                             <input
                                 class="form-field"
                                 id="full-name"
                                 type="text"
                                 placeholder="Full Name"
                                 name="name"
+                                autocomplete="name"
                                 required
                             />
                         </div>
                         <div>
-                            <label for="email"></label>
+                            <label class="sr-only" for="email">Email</label>
                             <input
                                 class="form-field"
                                 id="email"
                                 type="email"
                                 placeholder="Email"
                                 name="email"
+                                autocomplete="email"
                                 required
                             />
                         </div>
                         <div>
-                            <label for="message"></label>
+                            <label class="sr-only" for="message">Message</label>
                             <textarea
                                 class="form-field"
                                 id="message"
                                 name="message"
                                 placeholder="Message"
+                                autocomplete="off"
                                 required
                             ></textarea>
                         </div>

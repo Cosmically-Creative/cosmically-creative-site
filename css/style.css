@@ -184,6 +184,9 @@ body.page-transition-out {
     background: none;
     cursor: pointer;
     display: none;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.8rem;
 }
 
 .icon-mobile-nav {
@@ -1037,11 +1040,16 @@ p {
 .steps-section .service-card:nth-child(4) {
     grid-row: 3 / 5;
 }
+
+.steps-section .service-card:nth-child(5) {
+    grid-row: 4 / 6;
+}
+
 .steps-section .service-card:nth-child(6) {
     grid-row: 4 / 6;
 }
 
-.fifth-step {
+.steps-section .service-card.fifth-step {
     grid-row: 5 / 7;
 }
 
@@ -1109,6 +1117,36 @@ p {
 
 .footer-legal-link:hover {
     color: var(--color-blue);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link {
+    position: fixed;
+    left: 1.6rem;
+    top: -100%;
+    z-index: 10001;
+    background-color: var(--color-yellow);
+    color: var(--color-navy);
+    padding: 1.2rem 2.4rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0.8rem;
+}
+
+.skip-link:focus {
+    top: 1.6rem;
+    color: var(--color-navy);
 }
 
 /* Animations */

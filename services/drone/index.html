@@ -7,6 +7,23 @@
       name="description"
       content="Capture stunning aerial footage and photography for your business with professional drone services. From real estate to events, elevate your brand with breathtaking perspectives."
     />
+    <link
+      rel="canonical"
+      href="https://www.cosmicallycreative.com/services/drone/"
+    />
+    <meta
+      property="og:title"
+      content="Professional Drone Photography &amp; Video – Cosmically Creative"
+    />
+    <meta
+      property="og:description"
+      content="Capture stunning aerial footage and photography for your business with professional drone services. From real estate to events, elevate your brand with breathtaking perspectives."
+    />
+    <meta
+      property="og:url"
+      content="https://www.cosmicallycreative.com/services/drone/"
+    />
+    <meta name="twitter:card" content="summary" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,6 +72,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="scroll-progress"></div>
     <header class="header">
       <nav class="nav">
@@ -69,7 +87,7 @@
           <li><a class="main-nav-link" href="../../#about">About</a></li>
           <li><a class="main-nav-link" href="#contact">Contact</a></li>
           <li class="nav-item-dropdown">
-            <a class="main-nav-link" href="#services">Services</a>
+            <a class="main-nav-link" href="../../#services">Services</a>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-link" href="../web-design/">Web Design</a>
@@ -112,7 +130,7 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <section class="steps-section">
         <div class="steps-header">
           <h1>Drone Services</h1>
@@ -191,34 +209,37 @@
             method="POST"
           >
             <div>
-              <label for="full-name"></label>
+              <label class="sr-only" for="full-name">Full Name</label>
               <input
                 class="form-field"
                 id="full-name"
                 type="text"
                 placeholder="Full Name"
                 name="name"
+                autocomplete="name"
                 required
               />
             </div>
             <div>
-              <label for="email"></label>
+              <label class="sr-only" for="email">Email</label>
               <input
                 class="form-field"
                 id="email"
                 type="email"
                 placeholder="Email"
                 name="email"
+                autocomplete="email"
                 required
               />
             </div>
             <div>
-              <label for="message"></label>
+              <label class="sr-only" for="message">Message</label>
               <textarea
                 class="form-field"
                 id="message"
                 name="message"
                 placeholder="Message"
+                autocomplete="off"
                 required
               ></textarea>
             </div>

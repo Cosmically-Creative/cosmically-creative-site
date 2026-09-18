@@ -136,7 +136,7 @@
   }
 
   .nav-links {
-    background: linear-gradient(rgba(11, 21, 50, 0.9));
+    background: var(--color-navy);
     position: absolute;
     top: 0;
     right: 0;
@@ -376,11 +376,16 @@
   .steps-section .service-card:nth-child(4) {
     grid-row: 4 / 5;
   }
+
+  .steps-section .service-card:nth-child(5) {
+    grid-row: 5 / 6;
+  }
+
   .steps-section .service-card:nth-child(6) {
     grid-row: 5 / 6;
   }
 
-  .fifth-step {
+  .steps-section .service-card.fifth-step {
     grid-row: 6 / 7;
   }
 
