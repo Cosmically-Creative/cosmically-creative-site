@@ -768,6 +768,10 @@ p {
     transition: all 0.4s;
 }
 
+.project-card h3 {
+    text-align: left;
+}
+
 .project-card:hover {
     box-shadow: 0 1rem 1rem 0 var(--color-blue);
 }
@@ -812,6 +816,12 @@ p {
     background-image:
         linear-gradient(rgba(11, 21, 50, 0.75)),
         url("/img/client-img/siouxdiamonddetailing.png");
+}
+
+.project-card--8 {
+    background-image:
+        linear-gradient(rgba(11, 21, 50, 0.75)),
+        url("/img/client-img/whispersoflhj.png");
 }
 
 .project-card-link:link,
