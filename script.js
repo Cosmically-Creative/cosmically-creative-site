@@ -1,5 +1,26 @@
 "use strict";
 
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+  const sent = new URLSearchParams(window.location.search).get("sent");
+  if (sent === "1" || sent === "0") {
+    const note = document.createElement("p");
+    note.className =
+      "form-status " +
+      (sent === "1" ? "form-status-success" : "form-status-error");
+    note.setAttribute("role", "status");
+    note.textContent =
+      sent === "1"
+        ? "Message sent. I’ll get back to you soon."
+        : "That message didn’t send. Please try again, or email blake@cosmicallycreative.com.";
+    contactForm.prepend(note);
+    const contactSection = document.getElementById("contact");
+    if (window.location.hash !== "#contact" && contactSection) {
+      contactSection.scrollIntoView();
+    }
+  }
+}
+
 // Mobile navigation
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");

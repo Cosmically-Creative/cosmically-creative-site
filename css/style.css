@@ -861,6 +861,29 @@ p {
     gap: 4rem;
     align-self: center;
     justify-self: center;
+    position: relative;
+}
+
+.form-hp {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.form-status {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    max-width: 50rem;
+}
+
+.form-status-success {
+    color: var(--color-yellow);
+}
+
+.form-status-error {
+    color: #ffb4b4;
 }
 
 .form-field {

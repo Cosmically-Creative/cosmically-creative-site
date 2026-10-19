@@ -205,7 +205,7 @@
           <form
             class="contact-form"
             name="contact"
-            action="https://formbold.com/s/67LMK"
+            action="/contact.php"
             method="POST"
           >
             <div>
@@ -243,6 +243,17 @@
                 required
               ></textarea>
             </div>
+            <div class="form-hp" aria-hidden="true">
+              <label for="cc-hp">Leave this field empty</label>
+              <input
+                id="cc-hp"
+                type="text"
+                name="cc_hp"
+                tabindex="-1"
+                autocomplete="off"
+              />
+            </div>
+            <input type="hidden" name="redirect" value="/services/drone/" />
             <button type="submit" class="btn btn-form">Send Message</button>
           </form>
         </div>

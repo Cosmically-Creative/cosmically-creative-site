@@ -236,7 +236,8 @@
     width: 40rem;
   }
 
-  .form-field {
+  .form-field,
+  .form-status {
     width: 40rem;
   }
 
@@ -508,7 +509,8 @@
     max-width: 80%;
   }
 
-  .form-field {
+  .form-field,
+  .form-status {
     width: 38rem;
   }
 
