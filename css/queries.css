@@ -428,6 +428,7 @@
 
   .about-picture {
     margin: 0;
+    grid-column: 1;
     grid-row: 2 / 3;
     width: 75%;
     height: auto;

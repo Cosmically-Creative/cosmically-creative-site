@@ -604,22 +604,29 @@ p {
 }
 
 .about-wrapper {
-    display: flow-root;
+    display: grid;
+    grid-template-columns: 1fr 45%;
+    align-items: center;
+    column-gap: 5rem;
     border-radius: 5rem;
 }
 
+.about-wrapper p {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .about-picture {
-    float: right;
-    width: 45%;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
     aspect-ratio: 1;
-    margin-left: 5rem;
     background-color: var(--color-white);
     border-radius: 5rem;
     background-image: url("/img/me.jpg");
     background-size: cover;
     border: 3px solid var(--color-yellow);
     transition: all 0.3s;
-    margin-bottom: 5rem;
 }
 
 .project-section {
