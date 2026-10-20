@@ -59,6 +59,12 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background-color: var(--color-navy);
+    background-image: url("/img/projects-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
@@ -66,7 +72,7 @@ body {
     line-height: 1;
     font-weight: 400;
     color: var(--color-white);
-    background-color: var(--color-navy);
+    background-color: transparent;
     font-size: 2rem;
     overflow-x: hidden;
     opacity: 1;
@@ -585,9 +591,6 @@ p {
 .about-section {
     display: flex;
     justify-content: center;
-    background-image: url("/img/about-me.svg");
-    background-size: cover;
-    background-position: center;
 }
 
 .about-content {
@@ -627,8 +630,6 @@ p {
     justify-content: center;
     padding: 20rem 0px 20rem 0px;
     gap: 7rem;
-    background-image: url("/img/projects-bg.svg");
-    background-size: cover;
 }
 
 .astronaut {
@@ -831,9 +832,6 @@ p {
 }
 
 .contact-section {
-    background-image: url("/img/footer.svg");
-    background-size: cover;
-    background-position: bottom;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1029,23 +1027,6 @@ p {
 }
 
 /* Services Pages */
-html:has(.steps-section):not(:has(.legal-section)) {
-    background-color: var(--color-navy);
-    background-image: url("/img/projects-bg.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-body:has(.steps-section):not(:has(.legal-section)) {
-    background-color: transparent;
-}
-
-body:has(.steps-section):not(:has(.legal-section)) .contact-section {
-    background-image: none;
-}
-
 .steps-section {
     display: flex;
     flex-direction: column;
